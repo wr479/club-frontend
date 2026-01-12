@@ -52,7 +52,6 @@ footer::before {
     background-position-y: -500px;
     filter: opacity(90%);
     filter: brightness(50%);
-
     z-index: -2;
 }
 
@@ -383,11 +382,24 @@ a {
 .first-cont_for_banner{
     height: 310px;
     display: flex;
-    flex-direction: row;
 }
 .first-cont_for_banner-first_chapter{
     width: 548px;
     height: 310px;
+    background-image: url(./main-img/red-circle.png);
+    Background-size: cover;
+}
+.cont-for_logo{
+    width: 240px;
+    height: 104px;
+    position: relative;
+}
+.cont-for_logo > img{
+    width: 240px;
+    height: 104px;
+    position: absolute;
+    top: 115px;
+    left: 170px;
 }
 .first-cont_for_banner-second_chapter{
     width: 580px;
@@ -407,7 +419,8 @@ a {
     font-size: 16px;
     line-height: 100%;
     letter-spacing: 0%;
-    color: rgba(197, 55, 32, 1);  
+    color: rgba(197, 55, 32, 1);
+    padding-top: 24px;  
 }
 .first-cont_for_banner-second_chapter-first_chapter > h1{
     font-weight: 700;
@@ -432,18 +445,12 @@ a {
     background-color: rgba(29, 29, 29, 1);
     color: #ffffff;
 }
-.fotka-logo{
+.cont-for_fotka-logo{
     width: 240px;
     height: 104px;
-    position: absolute;
-    left: 730px;
-    top: 1115px;
+
 }
-.red-circle_fotka{
-    width: 548px;
-    height: 310px;
-    z-index: 0;
-}
+
 .button_for-news{
     width: 1128px;
     height: 56px;
@@ -463,10 +470,186 @@ a {
     vertical-align: middle;
     color:rgba(197, 55, 32, 1);
 }
-.FAQ{
+.FAQ::before {
     width: 100%;
     height: 1060px;
-    
+    content: '';
+    position: absolute;
+    top: AUTO;
+    left: 0;
+    background-image: url('./main-img/F.A.Q.\ back.jpg');
+    background-size: cover;
+    filter: opacity(80%);
+    filter: brightness(30%);
+}
+.FAQ{
+    display: flex;
+    justify-content: center;
+}
+.faq-Boss-container{
+    height: 1060px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    color: #ffffff;
+    padding-top: 88px;
+    padding-bottom: 88px;
+    background: linear-gradient(360deg, black, rgba(197, 55, 32, 0));
+}
+.first-faq-block{
+    height: 152px;
+    width: 1128px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.f_a_q{
+    width: 1128px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+}
+.razdel-faq{
+    width: 1100px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    padding-top: 44px;
+}
+.razdel-faq > h1{
+    width: 892px;
+    height: 60px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 100%;
+    text-align: center;
+}
+.second-faq-block{
+    display: flex;
+    flex-direction: row;
+    width: 1128px;
+    height: 50px;
+    border-bottom: 2px solid rgba(29, 29, 29, 1);
+    margin-top: 36px;
+}
+.general-questions{
+    width: 564px;
+    height: 50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 4px solid rgba(197, 55, 32, 1);
+}
+.general-questions > p{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: rgba(197, 55, 32, 1);
+}
+.exploriation{
+    width: 564px;
+    height: 50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.exploriation > h1{
+font-weight: 500;
+font-size: 24px;
+line-height: 100%;
+letter-spacing: 0%;
+text-align: center;
+}
+.third-faq-block{
+    width: 1128px;
+    height: 502px;
+    padding-top: 32px;
+}
+.wetki-stekloochistitelya{
+    height: 166px;
+    padding: 32px 8px 32px 8px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-bottom: 2px solid rgba(255, 255, 255, 1);
+}
+.wetki-stekloochistitelya > div > p{
+    width: 1024px;
+    height: 20px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+.wetki-stekloochistitelya >div > h1{
+    padding-top: 20px;
+    width: 1024px;
+    height: 62px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+.kokers {
+    width: 1024px;
+    height: 102px;
+}
+.cont-cont-for-fotka_wetki{
+    width: 104px;
+    height: 102px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 8px;
+}
+.cont-for-fotka_wetki{
+    width: 56px;
+    height: 56px;
+    margin-top: -30px;
+}
+.faq-grid{
+    width: 1128px;
+    height: 84px;
+    border-bottom: 2px solid rgba(255, 255, 255, 1);
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+.third-faq-block_grids{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    display:flex;
+    flex-direction: column;
+}
+.fourth-faq-block{
+    width: 1128px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    padding-top: 72px;
+}
+.fourth-faq-block > button{
+    width:168px;
+    height: 40px;
+    border: 4px solid rgba(197, 55, 32, 1);
+    background-color: transparent;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
 }
 .footer-logo-and-privacy {
     display: flex;
