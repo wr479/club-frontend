@@ -58,7 +58,7 @@ footer::before {
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url('./footer/foot-pic.jpg');
+    background-image: url('./allAssets/footer/foot-pic.jpg');
     background-size: cover;
     background-position-y: -500px;
     filter: opacity(90%);
@@ -332,7 +332,7 @@ input:focus {
 
 .post-bunner-page1 {
     height: 272px;
-    background-image: url(./post-bunner-icons/post-back.svg);
+    background-image: url(./allAssets/post-bunner-icons/post-back.svg);
 }
 
 .post-stroke {
@@ -347,7 +347,7 @@ input:focus {
     height: 1244px;
     content: '';
 
-    background-image: url('./auto-items/auto-items-back.jpg');
+    background-image: url('./allAssets/auto-items/auto-items-back.jpg');
     background-size: cover;
     background-position-x: -270px;
     filter: opacity(15%);
@@ -457,7 +457,7 @@ input:focus {
     width: 100%;
     content: '';
 
-    background-image: url('./services/serv-bg.jpg');
+    background-image: url('./allAssets/services/serv-bg.jpg');
     background-size: cover;
 
     position: absolute;
@@ -557,7 +557,7 @@ input:focus {
 .label {
     width: 124px;
     height: 120px;
-    background-image: url('./services/passive-label.png');
+    background-image: url('./allAssets/services/passive-label.png');
 
     display: flex;
     justify-content: center;
@@ -748,7 +748,7 @@ input:focus {
     height: 667px;
     width: 100%;
     content: '';
-    background-image: url('./about-company/aboutCompany-bg.jpg');
+    background-image: url('./allAssets/about-company/aboutCompany-bg.jpg');
     background-size: cover;
     filter: brightness(50%);
 
@@ -801,7 +801,7 @@ input:focus {
 .dude {
     height: 347px;
     width: 360px;
-    background-image: url('./about-company/dude.jpg');
+    background-image: url('./allAssets/about-company/dude.jpg');
     background-position-x: -220px;
     background-size: 225%;
 
