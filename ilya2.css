@@ -220,7 +220,6 @@ a {
     flex-direction: column;
     gap: 40px;
 }
-
 .banner-text > h1 {
     color: rgba(255, 255, 255, 1);
     font-size: 48px;
@@ -269,15 +268,14 @@ a {
     line-height: 100%;
     letter-spacing: 0%;
 }
-
 .section-news{
-    height: 1222px;
+    height: 772px;
     background-color: #ffffff ;
     display: flex;
     justify-content: center;
 }
 .news_Boss-Block{
-    height:1222px;
+    height:772px;
 }
 .news_first-block{
     height: 124px;
@@ -319,160 +317,118 @@ a {
     gap:32px
 }
 .news_second-block{
-    margin-top: 36px;
-    height: 758px;
+    height: 428px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
-.second-cont_for_banners_grids{
-    height: 422px;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    margin-top: 26px;
-    gap: 21px;
+.first-cont-for_koleso{
+    width: 1128px;
+    height: 310px;
+    background-image: url(./main-img/red-koleso.png);
 }
-.three-grids_banner{
-    width: 362px;
-    height: 422px;
+.cont-for-logo_fotka{
+    width: 237px;
+    height: 104px;
+    position: relative;
 }
-.red_circle{
-    width: 362px;
-    height: 284px;
+.cont-for-logo_fotka > img{
+    size: 237px;
+    height: 104px;
+    position: absolute;
+    left: 445px;
+    top: 105px;
 }
-.three-grids_banner-first_chapter{
-    height: 284px;
+.second-cont-for_text{
+    padding-top: 20px;
+    height: 100px;
 }
-.three-grids_banner-second_chapter{
-    height: 138px;
-    padding-left: 20px;
-    background-color:rgba(29, 29, 29, 1);
-;
+.cont-for-first_text{
+    width: 528px;
+    height: 20px;
+    display: flex;
+    align-items: center;
 }
-.three-grids_banner-second_chapter > p{
-    
-    padding-top: 12px;
-    font-weight: 500;
-    font-size: 12px;
+.cont-for-first_text > p{
+    font-weight: 700;
+    font-size: 16px;
     line-height: 100%;
     letter-spacing: 0%;
     color:rgba(197, 55, 32, 1);
 }
-.three-grids_banner-second_chapter > h1{
-    font-weight: 700;
-    font-size: 17px;
+.cont-for-second_text{
+    height: 62px;
+    padding-top: 16px;
+}
+.cont-for-second-text > p{
+    font-weight: 500;
+    font-size: 16px;
     line-height: 100%;
     letter-spacing: 0%;
-    margin-top: 12px;
-    color:rgba(255, 255, 255, 1);
-
+    color:rgba(29, 29, 29, 1);
 }
-.first-strelka{
-    margin-top: 26px;
-    padding-left: 270px;
-}
-.second-strelka{
-    margin-top: 10px;
-    padding-left: 270px;
-}
-.fotka-logo_second{
-    width: 168px;
-    height: 74px;
-    position: relative;
-    bottom: 175px;
-    left: 45px;
-}
-.first-cont_for_banner{
-    height: 310px;
+.third-cont-for_strelki{
+    height: 52px;
     display: flex;
+    flex-direction: row;
+    padding-top: 52px;
+    justify-content: space-between;
 }
-.first-cont_for_banner-first_chapter{
-    width: 548px;
-    height: 310px;
-    background-image: url(./main-img/red-circle.png);
-    Background-size: cover;
+.cont-for-first_strelki{
+    width: 180px;
+    height: 52px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
 }
-.cont-for_logo{
-    width: 240px;
-    height: 104px;
-    position: relative;
+.cont-for-text-in_strelki{
+    width: 128px;
+    height:20px;
+    padding-left: 16px;
+    display: flex;
+    align-items: center;
 }
-.cont-for_logo > img{
-    width: 240px;
-    height: 104px;
-    position: absolute;
-    top: 115px;
-    left: 170px;
-}
-.first-cont_for_banner-second_chapter{
-    width: 580px;
-    height: 310px;
-    background-color: rgba(29, 29, 29, 1);
-    padding-left: 28px;
-    gap: 28px;
-}
-.first-cont_for_banner-second_chapter-first_chapter{
-    height: 155px;
-}
-.first-cont_for_banner-second_chapter-second_chapter{
-    height: 155px;
-}
-.first-cont_for_banner-second_chapter-first_chapter > p{
+.cont-for-text-in_strelki_second > p{
     font-weight: 700;
     font-size: 16px;
     line-height: 100%;
     letter-spacing: 0%;
     color: rgba(197, 55, 32, 1);
-    padding-top: 24px;  
 }
-.first-cont_for_banner-second_chapter-first_chapter > h1{
+.cont-for-img-in_strelki{
+    width: 52px;
+    height: 52px;
+}
+.cont-for-second_strelki{
+    width: 180px;
+    height: 52px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.cont-for-text-in_strelki_second{
+    width: 128px;
+    height:20px;
+    padding-right: 16px;
+    display: flex;
+    align-items: center;
+}
+.cont-for-text-in_strelki > p{
     font-weight: 700;
-    font-size: 24px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    color: rgba(255, 255, 255, 1);
-    margin-top: 28px;
-}
-.first-cont_for_banner-second_chapter-second_chapter > h1{
-    font-weight: 500;
     font-size: 16px;
     line-height: 100%;
     letter-spacing: 0%;
-    color: rgba(255, 255, 255, 1);
+    color: rgba(197, 55, 32, 1);
+    opacity: 60%;
 }
-.first-cont_for_banner-second_chapter-second_chapter > button{
-    margin-top: 24px;
-    width: 172px;
-    height: 40px;
-    border: 5px solid rgba(197, 55, 32, 1);
-    background-color: rgba(29, 29, 29, 1);
-    color: #ffffff;
-}
-.cont-for_fotka-logo{
-    width: 240px;
-    height: 104px;
-
-}
-
-.button_for-news{
-    width: 1128px;
-    height: 56px;
-    display:flex;
-    margin-top:72px;
-    justify-content: center;
-}
-.button_for-news > button{
-    width: 235px;
-    height: 56px;
-    border: 3px solid rgba(197, 55, 32, 1);
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    text-align: center;
-    vertical-align: middle;
-    color:rgba(197, 55, 32, 1);
+.cont-for-img-in_strelki_second{
+    width: 52px;
+    height: 52px;
 }
 .FAQ::before {
     width: 100%;
-    height: 1060px;
+    height: 1238px;
     content: '';
     position: absolute;
     top: AUTO;
@@ -485,9 +441,10 @@ a {
 .FAQ{
     display: flex;
     justify-content: center;
+    position: relative;
 }
 .faq-Boss-container{
-    height: 1060px;
+    height: 1238px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -547,7 +504,6 @@ a {
     display:flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 4px solid rgba(197, 55, 32, 1);
 }
 .general-questions > p{
     font-weight: 500;
@@ -555,7 +511,6 @@ a {
     line-height: 100%;
     letter-spacing: 0%;
     text-align: center;
-    color: rgba(197, 55, 32, 1);
 }
 .exploriation{
     width: 564px;
@@ -563,6 +518,7 @@ a {
     display:flex;
     justify-content: center;
     align-items: center;
+    border-bottom: 4px solid rgba(197, 55, 32, 1);
 }
 .exploriation > h1{
     font-weight: 500;
@@ -570,21 +526,29 @@ a {
     line-height: 100%;
     letter-spacing: 0%;
     text-align: center;
+    color: rgba(197, 55, 32, 1);
 }
 .third-faq-block{
     width: 1128px;
-    height: 502px;
-    padding-top: 32px;
+    height: 344px;
+    position: relative;
 }
 .wetki-stekloochistitelya{
-    height: 166px;
+    height: 344px;
     padding: 32px 8px 32px 8px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     border-bottom: 2px solid rgba(255, 255, 255, 1);
 }
-.wetki-stekloochistitelya > div > p{
+.wetki-stekloochistitelya > img{
+    height: 56px;
+    width: 56px;
+    position: absolute;
+    left: 1072px;
+    bottom: 272px;
+}
+.wetki-stekloochistitelya > .kokers > p{
     width: 1024px;
     height: 20px;
     font-weight: 700;
@@ -592,14 +556,15 @@ a {
     line-height: 100%;
     letter-spacing: 0%;
 }
-.wetki-stekloochistitelya >div > h1{
+.wetki-stekloochistitelya >.kokers> h1{
     padding-top: 20px;
     width: 1024px;
-    height: 62px;
+    height: 240px;
     font-weight: 500;
     font-size: 16px;
-    line-height: 100%;
-    letter-spacing: 0%;
+    line-height: 120%;
+    opacity: 70%;
+    padding-bottom: 32px;
 }
 .kokers {
     width: 1024px;
@@ -651,6 +616,20 @@ a {
     text-align: center;
     vertical-align: middle;
 }
+.up-down{
+    width: 52px;
+    height: 116px;
+    position: relative;
+    left: 595px;
+    top: 1005px;
+    padding-left: 162px;
+}
+.down{
+    padding-top: 6px;
+}
+.up-down{
+    padding-bottom: 6px;
+}   
 .footer-logo-and-privacy {
     display: flex;
     flex-direction: column;
