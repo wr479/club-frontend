@@ -81,6 +81,7 @@ footer {
 
 a {
     cursor: pointer;
+    text-decoration: none;
 }
 
 input:focus {
