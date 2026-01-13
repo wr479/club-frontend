@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Каталог</title>
-    <link rel="stylesheet" href="./egorchik-catalog.css">
+    <title>Корзина</title>
+    <link rel="stylesheet" href="./egorchik-bucket.css">
     <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
@@ -27,7 +27,7 @@
             </div>
             <img id="searchbar-opener" class="nav-search" src="./allAssets/nav-icons/лупа.svg" alt="">
             <div class="nav-bucket-and-counter">
-                <img class="bucket" src="./allAssets/nav-icons/корзина пассивная.svg" alt="">
+                <img class="bucket" src="./allAssets/nav-icons/корзина активная.svg" alt="">
                 <div class="counter-circle">
                     <p class="counter-counter">0</p>
                 </div>
@@ -89,9 +89,15 @@
             <div>
                 <a class="red-text" href="./main.html">ГЛАВНАЯ</a>
                 <img src="./allAssets/catalog-content/стрелка.svg" alt="">
-                <a class="regular-text">КАТАЛОГ</a>
+                <a class="regular-text">КОРЗИНА</a>
             </div>
         </div>
+        <section class="bucket-section">
+            <h1>КОРЗИНА</h1>
+            <div class="bucket-content">
+                <p>ВАША КОРЗИНА ПУСТА</p>
+            </div>
+        </section>
     </main>
     <footer>
         <div class="footer-logo-and-privacy">
@@ -145,6 +151,5 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="./slider.js"></script>
     <script src="./dropDownSrchBar.js"></script>
-    <script src="./autoItmesScript.js"></script>
 </body>
 </html>
