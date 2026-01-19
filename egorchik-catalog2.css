@@ -350,7 +350,7 @@ input:focus {
 
 .sidenav {
   height: 30%;
-  width: 200px;
+  width: 264px;
   z-index: 1;
   background-color: rgba(0, 0, 0, 1);
   overflow-x: hidden;
@@ -400,11 +400,19 @@ input:focus {
 
 .sidenav-options {
     height: 10%;
-    width: 200px;
+    width: 264px;
     z-index: 1;
     background-color: rgba(0, 0, 0, 1);
     overflow-x: hidden;
     padding-top: 20px;
+}
+
+.sidenav-options > h1 {
+    padding: 5px 20px;
+    width: 100%;
+    color: rgba(255, 255, 255, 1);
+    font-size: 16px;
+    font-weight: 700;
 }
 
 .sidenav-options a, .dropdown-btn {
@@ -435,6 +443,9 @@ input:focus {
     height: 356px;
     width: 264px;
     background-color: rgba(29, 29, 29, 1);
+
+    display: flex;
+    flex-direction: column;
 }
 
 .catalog-grid-with-text {
@@ -443,8 +454,65 @@ input:focus {
     gap: 20px;
 }
 
-.catalog-text > p {
+.catalog-text {
     width: 840px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 90px;
+}
+
+.catalog-text > div {
+    color: rgba(29, 29, 29, 1);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.catalog-page-bg {
+    width: 264px;
+    height: 184px;
+    background-color: rgba(255, 255, 255, 1);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-txt-btn-cont {
+    width: 264px;
+    height: 172px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 20px 12px;
+}
+
+.page-txt-btn-cont > button {
+    width: 120px;
+    height: 40px;
+    border: 4px solid rgba(197, 55, 32, 1);
+
+    color: rgba(255, 255, 255, 1);
+    background-color: transparent;
+    font-size: 12px;
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+.text-cont > h1 {
+    color: rgba(255, 255, 255, 1);
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.text-cont > p {
+    color: rgba(255, 255, 255, 1);
+    font-size: 12px;
+    font-weight: 500;
 }
 
 .footer-logo-and-privacy {
