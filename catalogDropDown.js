@@ -1,5 +1,6 @@
 let dropdown = document.getElementsByClassName("dropdown-btn");
 let subDropdown = document.getElementsByClassName("sub-dropdown-btn");
+let strokeInButton = document.querySelectorAll('.fa caret-down');
 let i;
 let o;
 

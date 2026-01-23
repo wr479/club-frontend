@@ -8,6 +8,7 @@
     <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./noUiSliderJs/nouislider.min.css"/>
 </head>
 <body>
     <header id="upperPage">
@@ -291,13 +292,20 @@
                         <button class="dropdown-btn">ЦЕНА
                             <img class="fa fa-caret-down" src="./allAssets/catalog-content/white-stroke.svg" alt="">
                         </button>
-                        <div class="dropdown-container">
-                            <div class="range-slider">
-                                <span class="slider-value">2199</span>
-                                <input type="range" class="lower" oninput="">
-                                <span class="slider-value">9390</span>
-                                <input type="range" class="upper" oninput="">
+                        <div class="opt-dropdown-container">
+                            <div class="range-slider-inputs">
+                                <label class="min-range-label">
+                                    <input type="number" id="min-input" min="2199" max="9390" placeholder="2199" class="min-range">
+                                </label>
+                                <label class="max-range-label">
+                                    <input type="number" id="max-input" min="2199" max="9390" placeholder="9390" class="max-range">
+                                </label>
                             </div>
+                            <div class="price-titles">
+                                <span>2199</span>
+                                <span>9390</span>
+                            </div>
+                            <div class="range-slider" id="range-slider"></div>
                         </div>
                         <button class="dropdown-btn">СТАТУС
                             <img class="fa fa-caret-down" src="./allAssets/catalog-content/white-stroke.svg" alt="">
@@ -615,6 +623,8 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="./slider.js"></script>
     <script src="./dropDownSrchBar.js"></script>
+    <script src="./noUiSliderJs/nouislider.min.js"></script>
+    <script src="./priceRange.js"></script>
     <script src="./autoItmesScript.js"></script>
     <script src="./catalogDropDown.js"></script>
     <script src="./pageToUp.js"></script>
