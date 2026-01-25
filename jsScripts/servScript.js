@@ -28,25 +28,25 @@ labels.forEach((label) => {
 function triaglesFunc() {
         if (activeId === 'label1') {
             pic1.style.display = 'block';
-            border1.style.backgroundImage = 'url(./allAssets/services/active-label.png)'; 
+            border1.style.backgroundImage = 'url(../allAssets/services/active-label.png)'; 
             pic2.style.display = 'none';
-            border2.style.backgroundImage = 'url(./allAssets/services/passive-label.png)';
+            border2.style.backgroundImage = 'url(../allAssets/services/passive-label.png)';
             pic3.style.display = 'none';
-            border3.style.backgroundImage = 'url(./allAssets/services/passive-label.png)';
+            border3.style.backgroundImage = 'url(../allAssets/services/passive-label.png)';
         } else if (activeId === 'label2') {
             pic1.style.display = 'none';
-            border1.style.backgroundImage = 'url(./allAssets/services/passive-label.png)';
+            border1.style.backgroundImage = 'url(../allAssets/services/passive-label.png)';
             pic2.style.display = 'block';
-            border2.style.backgroundImage = 'url(./allAssets/services/active-label.png)';
+            border2.style.backgroundImage = 'url(../allAssets/services/active-label.png)';
             pic3.style.display = 'none';
-            border3.style.backgroundImage = 'url(./allAssets/services/passive-label.png)';
+            border3.style.backgroundImage = 'url(../allAssets/services/passive-label.png)';
         } else if (activeId === 'label3') {
             pic1.style.display = 'none';
-            border1.style.backgroundImage = 'url(./allAssets/services/passive-label.png)';
+            border1.style.backgroundImage = 'url(../allAssets/services/passive-label.png)';
             pic2.style.display = 'none';
-            border2.style.backgroundImage = 'url(./allAssets/services/passive-label.png)';
+            border2.style.backgroundImage = 'url(../allAssets/services/passive-label.png)';
             pic3.style.display = 'block';
-            border3.style.backgroundImage = 'url(./allAssets/services/active-label.png)';
+            border3.style.backgroundImage = 'url(../allAssets/services/active-label.png)';
         };
 }; // а тут логику сам писал ( видно потому, что не аккуратно )
 
