@@ -47,7 +47,6 @@ nav {
 
 main {
     width: 100%;
-    position: relative;
 }
 
 footer::before {
@@ -350,7 +349,7 @@ input:focus {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    margin-top: 187px;
+    margin: 187px 0px;
 }
 
 .sidenav {
@@ -600,106 +599,66 @@ input:focus {
     background-image: url('../allAssets/catalog-content/handle.svg');
 }
 
-.catalog-page-grid {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 20px;
-}
-
-.catalog-page {
-    height: 356px;
-    width: 264px;
-    background-color: rgba(29, 29, 29, 1);
-
-    display: flex;
-    flex-direction: column;
-}
-
-.catalog-grid-with-text {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.catalog-text {
+.noItem-bunner {
     width: 840px;
+    height: 292px;
+    background-image: url('../allAssets/catalog-content/nothing.png');
+
     display: flex;
-    flex-direction: column;
-    gap: 30px;
-    margin-bottom: 90px;
+    justify-content: flex-start;
+    align-items: end;
+
+    padding: 40px;
 }
 
-.catalog-text p {
-    color: rgba(29, 29, 29, 1);
-    font-size: 16px;
+.noItem-txt-btn {
+    width: 370px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.noItem-txt-btn > h1 {
+    color: rgba(255, 255, 255, 1);
+    font-size: 32px;
     font-weight: 500;
 }
 
-.block-between-cat-text {
+.noItem-txt-btn > div {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
+    gap: 15px;
 }
 
-
-.cat-arrow-notation {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-}
-
-.cat-arrow-nat-cont {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 10px;
-}
-
-.catalog-page-bg {
-    width: 264px;
-    height: 184px;
-    background-color: rgba(255, 255, 255, 1);
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.page-txt-btn-cont {
-    width: 264px;
-    height: 172px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    padding: 20px 12px;
-}
-
-.page-txt-btn-cont > button {
-    width: 120px;
+.noItem-txt-btn > div > .back-button {
     height: 40px;
-    border: 4px solid rgba(197, 55, 32, 1);
+    width: 116px;
 
+    border: 4px solid rgba(255, 255, 255, 1);
+    background: transparent;
     color: rgba(255, 255, 255, 1);
-    background-color: transparent;
     font-size: 12px;
     font-weight: 700;
 
     cursor: pointer;
 }
 
-.text-cont > h1 {
-    color: rgba(255, 255, 255, 1);
-    font-size: 16px;
-    font-weight: 700;
-    margin-bottom: 10px;
-}
-
-.text-cont > p {
+.noItem-txt-btn > div > .back-button > a {
     color: rgba(255, 255, 255, 1);
     font-size: 12px;
-    font-weight: 500;
+    font-weight: 700;
+}
+
+.noItem-txt-btn > div > .call-manager-button {
+    height: 40px;
+    width: 220px;
+
+    border: 4px solid rgba(29, 29, 29, 1);
+    background: transparent;
+    color: rgba(29, 29, 29, 1);
+    font-size: 12px;
+    font-weight: 700;
+
+    cursor: pointer;
 }
 
 .upstroke {
