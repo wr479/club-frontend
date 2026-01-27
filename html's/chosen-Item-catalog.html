@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Каталог</title>
-    <link rel="stylesheet" href="../styles/noItem-catalog.css">
+    <link rel="stylesheet" href="../styles/catalog-choosen-item.css">
     <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
@@ -351,10 +351,39 @@
                         <div class="swiper-slide">
                             <img class='magnum-pic' src="../allAssets/catalog-content/MAGNUM 60Ah 1.png">
                         </div>
+                </div>
+                    <div class="swiper-button-prev">
+                        <img src="../allAssets/catalog-content/item-arrow.svg" alt="">
+                    </div>
+                    <div class="swiper-button-next">
+                        <img src="../allAssets/catalog-content/item-arrow.svg" alt="">
                     </div>
                 </div>
                 <div class="choosen-item-info-cont">
-
+                    <p class="green-text">В НАЛИЧИИ</p>
+                    <div class="info-cont">
+                        <p class="info-black">Емкость, Ач: <span class='info-grey'>60</span></p>
+                        <p class="info-black">Пусковой ток, А: <span class='info-grey'>500</span></p>
+                        <p class="info-black">Полярность: <span class='info-grey'>Прямая/Обратная</span></p>
+                        <p class="info-black">Клеммы: <span class='info-grey'>Толстые</span></p>
+                        <p class="info-black">Pазмеры (ДхШхВ), мм: <span class='info-grey'>242х175х190</span></p>
+                        <p class="info-black">Производитель: <span class='info-grey'>Magnum</span></p>
+                        <p class="info-black">Bес, кг: <span class='info-grey'>14.5</span></p>
+                    </div>
+                    <div class="price-cont">
+                        <h1>2199 руб.</h1>
+                        <p>2900 руб.</p>
+                    </div>
+                    <p class="post-price-text">Цена действительна при сдаче старого аккумулятора аналогичной емкости в лом</p>
+                </div>
+                <div class="choosen-bucket-btn-cont">
+                    <button>В КОРЗИНУ</button>
+                    <img src="../allAssets/catalog-content/choosen-bucket.svg">
+                </div>
+                <div class="choosen-addItem-btn-cont">
+                    <img id="minusCount" src="../allAssets/catalog-content/removeItem.svg">
+                    <button>01</button>
+                    <img id="plusCount" src="../allAssets/catalog-content/addItem.svg">
                 </div>
             </div>
             <img id="iconUp" class="upstroke" src="../allAssets/news-content/strokeUp.svg" alt="">
@@ -417,6 +446,7 @@
     <script src="../jsScripts/priceRange.js"></script>
     <script src="../jsScripts/catalogDropDown.js"></script>
     <script src="../jsScripts/itemSlider.js"></script>
+    <script src="../jsScripts/ItemCounter.js"></script>
     <script src="../jsScripts/pageToUp.js"></script>
 </body>
 </html>

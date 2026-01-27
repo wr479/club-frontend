@@ -7,8 +7,8 @@ const pageItemSlider = new Swiper('.item-swiper', {
     effect: 'slide',
     slidesPerView: 1,
 
-    scrollbar: {
-        el: '.swiper-scrollbar',
-        hide: true
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
     },
 },)
