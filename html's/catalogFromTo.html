@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Каталог</title>
-    <link rel="stylesheet" href="../styles/egorchik-catalog2.css">
+    <link rel="stylesheet" href="../styles/catalogFromTo.css">
     <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
@@ -48,7 +48,7 @@
     <div class="swiper-container swiper1">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-                <img src="../allAssets/main-logo-and-bunner/bunner.jpg" alt="">
+                <img class='main-swiperSlide' src="../allAssets/main-logo-and-bunner/bunner.jpg" alt="">
                 <div class="swiper-slide-title">
                     <div class="swiper-slide-with-button-div">
                         <h1>НАДЕЖНЫЕ, КАЧЕСТВЕННЫЕ АККУМУЛЯТОРЫ</h1>
@@ -57,7 +57,7 @@
                 </div>
             </div>
             <div class="swiper-slide">
-                <img src="../allAssets/main-logo-and-bunner/bunner.jpg" alt="">
+                <img class='main-swiperSlide' src="../allAssets/main-logo-and-bunner/bunner.jpg" alt="">
                 <div class="swiper-slide-title">
                     <div class="swiper-slide-with-button-div">
                         <h1>НАДЕЖНЫЕ, КАЧЕСТВЕННЫЕ АККУМУЛЯТОРЫ</h1>
@@ -66,7 +66,7 @@
                 </div>
             </div>
             <div class="swiper-slide">
-                <img src="../allAssets/main-logo-and-bunner/bunner.jpg" alt="">
+                <img class='main-swiperSlide' src="../allAssets/main-logo-and-bunner/bunner.jpg" alt="">
                 <div class="swiper-slide-title">
                     <div class="swiper-slide-with-button-div">
                         <h1>НАДЕЖНЫЕ, КАЧЕСТВЕННЫЕ АККУМУЛЯТОРЫ</h1>
@@ -75,7 +75,7 @@
                 </div>
             </div>
             <div class="swiper-slide">
-                <img src="../allAssets/main-logo-and-bunner/bunner.jpg" alt="">
+                <img class='main-swiperSlide' src="../allAssets/main-logo-and-bunner/bunner.jpg" alt="">
                 <div class="swiper-slide-title">
                     <div class="swiper-slide-with-button-div">
                         <h1>НАДЕЖНЫЕ, КАЧЕСТВЕННЫЕ АККУМУЛЯТОРЫ</h1>
@@ -95,6 +95,8 @@
                 <a class="regular-text">КАТАЛОГ</a>
                 <img src="../allAssets/catalog-content/стрелка.svg" alt="">
                 <a class="regular-text">АККУМУЛЯТОРЫ</a>
+                <img src="../allAssets/catalog-content/стрелка.svg" alt="">
+                <a class="regular-text">MAGNUM - каталог АКБ от 60 до 230Ah</a>
             </div>
         </div>
         <section class="accums">
@@ -107,15 +109,15 @@
                             <img class="fa fa-caret-down" src="../allAssets/catalog-content/white-stroke.svg" alt="">
                         </button>
                         <div class="dropdown-container">
-                            <button class="sub-dropdown-btn"><a class="link-to-new-cat" href="../html's/catalogFromTo.html">АКБ MAGNUM</a>
+                            <button class="sub-dropdown-btn">АКБ MAGNUM
                                 <img class="fa fa-caret-down" src="../allAssets/catalog-content/white-stroke.svg" alt="">
                             </button>
                             <div class="sub-dropdown-container">
-                                <a href="../html's/chosen-Item-catalog.html">MAGNUM 60Ah</a>
+                                <a>MAGNUM 60Ah</a>
                                 <a>MAGNUM 75Ah</a>
                                 <a>MAGNUM 90Ah</a>
                                 <a>MAGNUM 132Ah</a>
-                                <a href="../html's/noItem-catalog.html">MAGNUM 190Ah</a>
+                                <a>MAGNUM 190Ah</a>
                                 <a>MAGNUM 230Ah</a>
                             </div>
                             <button class="sub-dropdown-btn">АКБ ЗВЕРЬ
@@ -335,237 +337,274 @@
                     </div>
                 </div>
             </div>
-            <div class="catalog-grid-with-text">
-                <div class="catalog-page-grid">
-                    <div class='catalog-page'>
-                        <div class='catalog-page-bg'>
-                            <img src="../allAssets/catalog-content/magnumLogo.png" alt="">
-                        </div>
-                        <div class="page-txt-btn-cont">
-                            <div class="text-cont">
-                                <h1>АКБ MAGNUM</h1>
-                                <p>Компания «Кайнар – АКБ», Казахстан</p>
+            <div class="pages-and-sort">
+                <div class="items-sort-container">
+                    <p>СОРТИРОВАТЬ</p>
+                    <div class="by-price">
+                        <p>ПО ЦЕНЕ</p>
+                        <img src="../allAssets/catalog-content/acrive-sort-arrow.svg" alt="">
+                    </div>
+                    <div class="by-popularity">
+                        <p>ПО ПОПУЛЯРНОСТИ</p>
+                        <img src="../allAssets/catalog-content/unactive-sort-arrow.svg" alt="">
+                    </div>
+                    <div class="by-availebility">
+                        <p>ПО НАЛИЧИЮ</p>
+                        <img src="../allAssets/catalog-content/unactive-sort-arrow.svg" alt="">
+                    </div>
+                </div>
+                <div class="pages-grid">
+                    <div class="sortpages-page">
+                        <img class="accum-main-pic" src="../allAssets/catalog-content/fromto-page-pic.png" alt="">
+                        <div class="accum-info">
+                            <h1 class="1">MAGNUM 60Ah</h1>
+                            <p>Цена действительна при сдаче старого аккумулятора аналогичной емкости в лом</p>
+                            <div>
+                                <p class="info-black">Емкость, Ач: <span class='info-grey'>60</span></p>
+                                <p class="info-black">Пусковой ток, А: <span class='info-grey'>500</span></p>
+                                <p class="info-black">Полярность: <span class='info-grey'>Прямая/Обратная</span></p>
+                                <p class="info-black">Клеммы: <span class='info-grey'>Толстые</span></p>
+                                <p class="info-black">Pазмеры (ДхШхВ), мм: <span class='info-grey'>242х175х190</span></p>
+                                <p class="info-black">Производитель: <span class='info-grey'>Magnum</span></p>
+                                <p class="info-black">Bес, кг: <span class='info-grey'>14.5</span></p>
                             </div>
-                            <button>ПОДРОБНЕЕ</button>
+                        </div>
+                        <div class="price-and-order">
+                            <div class="price-cont">
+                                <h1>2199 руб.</h1>
+                                <p>2900 руб.</p>
+                            </div>
+                            <div class="choosen-addItem-btn-cont">
+                                <img id="minusCount" src="../allAssets/catalog-content/removeItem.svg">
+                                <button id="counter">00</button>
+                                <img id="plusCount" src="../allAssets/catalog-content/addItem.svg">
+                            </div>
+                            <div class="choosen-bucket-btn-cont">
+                                <button>В КОРЗИНУ</button>
+                                <img src="../allAssets/catalog-content/choosen-bucket.svg">
+                            </div>
+                            <button class="more-info-btn">
+                                ПОДРОБНЕЕ
+                            </button>
                         </div>
                     </div>
-                    <div class='catalog-page'>
-                        <div class='catalog-page-bg'>
-                            <img src="../allAssets/catalog-content/2.png" alt="">
-                        </div>
-                        <div class="page-txt-btn-cont">
-                            <div class="text-cont">
-                                <h1>АКБ ЗВЕРЬ</h1>
-                                <p>Компания «Аккумуляторные технологии» – ООО "АкТех". 
-                                Иркутская область, г. Свирск</p>
+                    <div class="sortpages-page in-availebility">
+                        <img class="accum-main-pic" src="../allAssets/catalog-content/fromto-page-pic.png" alt="">
+                        <div class="accum-info">
+                            <h1 class="2">MAGNUM 60Ah</h1>
+                            <p>Цена действительна при сдаче старого аккумулятора аналогичной емкости в лом</p>
+                            <div>
+                                <p class="info-black">Емкость, Ач: <span class='info-grey'>60</span></p>
+                                <p class="info-black">Пусковой ток, А: <span class='info-grey'>500</span></p>
+                                <p class="info-black">Полярность: <span class='info-grey'>Прямая/Обратная</span></p>
+                                <p class="info-black">Клеммы: <span class='info-grey'>Толстые</span></p>
+                                <p class="info-black">Pазмеры (ДхШхВ), мм: <span class='info-grey'>242х175х190</span></p>
+                                <p class="info-black">Производитель: <span class='info-grey'>Magnum</span></p>
+                                <p class="info-black">Bес, кг: <span class='info-grey'>14.5</span></p>
                             </div>
-                            <button>ПОДРОБНЕЕ</button>
+                        </div>
+                        <div class="price-and-order">
+                            <div class="price-cont">
+                                <h1>2199 руб.</h1>
+                                <p>2900 руб.</p>
+                            </div>
+                            <div class="choosen-addItem-btn-cont">
+                                <img id="minusCount" src="../allAssets/catalog-content/removeItem.svg">
+                                <button id="counter">00</button>
+                                <img id="plusCount" src="../allAssets/catalog-content/addItem.svg">
+                            </div>
+                            <div class="choosen-bucket-btn-cont">
+                                <button>В КОРЗИНУ</button>
+                                <img src="../allAssets/catalog-content/choosen-bucket.svg">
+                            </div>
+                            <button class="more-info-btn">
+                                ПОДРОБНЕЕ
+                            </button>
+                        </div>
+                        <div class="in-availebility-check">
+                            <p>В НАЛИЧИИ</p>
                         </div>
                     </div>
-                    <div class='catalog-page'>
-                        <div class='catalog-page-bg'>
-                            <img src="../allAssets/catalog-content/3.png" alt="">
-                        </div>
-                        <div class="page-txt-btn-cont">
-                            <div class="text-cont">
-                                <h1>ТЮМЕНСКИЙ А З</h1>
-                                <p>АО "Тюменский аккумуляторный завод" Россия, г. Тюмень</p>
+                    <div class="sortpages-page for-order">
+                        <img class="accum-main-pic" src="../allAssets/catalog-content/fromto-page-pic.png" alt="">
+                        <div class="accum-info">
+                            <h1 class="3">MAGNUM 60Ah</h1>
+                            <p>Цена действительна при сдаче старого аккумулятора аналогичной емкости в лом</p>
+                            <div>
+                                <p class="info-black">Емкость, Ач: <span class='info-grey'>60</span></p>
+                                <p class="info-black">Пусковой ток, А: <span class='info-grey'>500</span></p>
+                                <p class="info-black">Полярность: <span class='info-grey'>Прямая/Обратная</span></p>
+                                <p class="info-black">Клеммы: <span class='info-grey'>Толстые</span></p>
+                                <p class="info-black">Pазмеры (ДхШхВ), мм: <span class='info-grey'>242х175х190</span></p>
+                                <p class="info-black">Производитель: <span class='info-grey'>Magnum</span></p>
+                                <p class="info-black">Bес, кг: <span class='info-grey'>14.5</span></p>
                             </div>
-                            <button>ПОДРОБНЕЕ</button>
+                        </div>
+                        <div class="price-and-order">
+                            <div class="price-cont">
+                                <h1>2199 руб.</h1>
+                                <p>2900 руб.</p>
+                            </div>
+                            <div class="choosen-addItem-btn-cont">
+                                <img id="minusCount" src="../allAssets/catalog-content/removeItem.svg">
+                                <button id="counter">00</button>
+                                <img id="plusCount" src="../allAssets/catalog-content/addItem.svg">
+                            </div>
+                            <div class="choosen-bucket-btn-cont">
+                                <button>В КОРЗИНУ</button>
+                                <img src="../allAssets/catalog-content/choosen-bucket.svg">
+                            </div>
+                            <button class="more-info-btn">
+                                ПОДРОБНЕЕ
+                            </button>
+                        </div>
+                        <div class="for-order-check">
+                            <p>ПОД ЗАКАЗ</p>
                         </div>
                     </div>
-                    <div class='catalog-page'>
-                        <div class='catalog-page-bg'>
-                            <img src="../allAssets/catalog-content/4.png" alt="">
-                        </div>
-                        <div class="page-txt-btn-cont">
-                            <div class="text-cont">
-                                <h1>АКБ AFA</h1>
-                                <p>Аккумуляторы AFA выпускаются на заводах концерна "Johnson Controls". 
-                                Страна: Чехия</p>
+                    <div class="sortpages-page">
+                        <img class="accum-main-pic" src="../allAssets/catalog-content/fromto-page-pic.png" alt="">
+                        <div class="accum-info">
+                            <h1 class="4">MAGNUM 60Ah</h1>
+                            <p>Цена действительна при сдаче старого аккумулятора аналогичной емкости в лом</p>
+                            <div>
+                                <p class="info-black">Емкость, Ач: <span class='info-grey'>60</span></p>
+                                <p class="info-black">Пусковой ток, А: <span class='info-grey'>500</span></p>
+                                <p class="info-black">Полярность: <span class='info-grey'>Прямая/Обратная</span></p>
+                                <p class="info-black">Клеммы: <span class='info-grey'>Толстые</span></p>
+                                <p class="info-black">Pазмеры (ДхШхВ), мм: <span class='info-grey'>242х175х190</span></p>
+                                <p class="info-black">Производитель: <span class='info-grey'>Magnum</span></p>
+                                <p class="info-black">Bес, кг: <span class='info-grey'>14.5</span></p>
                             </div>
-                            <button>ПОДРОБНЕЕ</button>
+                        </div>
+                        <div class="price-and-order">
+                            <div class="price-cont">
+                                <h1>2199 руб.</h1>
+                                <p>2900 руб.</p>
+                            </div>
+                            <div class="choosen-addItem-btn-cont">
+                                <img id="minusCount" src="../allAssets/catalog-content/removeItem.svg">
+                                <button id="counter">00</button>
+                                <img id="plusCount" src="../allAssets/catalog-content/addItem.svg">
+                            </div>
+                            <div class="choosen-bucket-btn-cont">
+                                <button>В КОРЗИНУ</button>
+                                <img src="../allAssets/catalog-content/choosen-bucket.svg">
+                            </div>
+                            <button class="more-info-btn">
+                                ПОДРОБНЕЕ
+                            </button>
                         </div>
                     </div>
-                    <div class='catalog-page'>
-                        <div class='catalog-page-bg'>
-                            <img src="../allAssets/catalog-content/5.png" alt="">
-                        </div>
-                        <div class="page-txt-btn-cont">
-                            <div class="text-cont">
-                                <h1>АКБ AKOM</h1>
-                                <p>АО "ТОРГОВЫЙ ДОМ АКОМ" Россия, Самарская область, г. Тольятти</p>
+                    <div class="sortpages-page in-availebility">
+                        <img class="accum-main-pic" src="../allAssets/catalog-content/fromto-page-pic.png" alt="">
+                        <div class="accum-info">
+                            <h1 class="5">MAGNUM 60Ah</h1>
+                            <p>Цена действительна при сдаче старого аккумулятора аналогичной емкости в лом</p>
+                            <div>
+                                <p class="info-black">Емкость, Ач: <span class='info-grey'>60</span></p>
+                                <p class="info-black">Пусковой ток, А: <span class='info-grey'>500</span></p>
+                                <p class="info-black">Полярность: <span class='info-grey'>Прямая/Обратная</span></p>
+                                <p class="info-black">Клеммы: <span class='info-grey'>Толстые</span></p>
+                                <p class="info-black">Pазмеры (ДхШхВ), мм: <span class='info-grey'>242х175х190</span></p>
+                                <p class="info-black">Производитель: <span class='info-grey'>Magnum</span></p>
+                                <p class="info-black">Bес, кг: <span class='info-grey'>14.5</span></p>
                             </div>
-                            <button>ПОДРОБНЕЕ</button>
+                        </div>
+                        <div class="price-and-order">
+                            <div class="price-cont">
+                                <h1>2199 руб.</h1>
+                                <p>2900 руб.</p>
+                            </div>
+                            <div class="choosen-addItem-btn-cont">
+                                <img id="minusCount" src="../allAssets/catalog-content/removeItem.svg">
+                                <button id="counter">00</button>
+                                <img id="plusCount" src="../allAssets/catalog-content/addItem.svg">
+                            </div>
+                            <div class="choosen-bucket-btn-cont">
+                                <button>В КОРЗИНУ</button>
+                                <img src="../allAssets/catalog-content/choosen-bucket.svg">
+                            </div>
+                            <button class="more-info-btn">
+                                ПОДРОБНЕЕ
+                            </button>
+                        </div>
+                        <div class="in-availebility-check">
+                            <p>В НАЛИЧИИ</p>
                         </div>
                     </div>
-                    <div class='catalog-page'>
-                        <div class='catalog-page-bg'>
-                            <img src="../allAssets/catalog-content/6.png" alt="">
-                        </div>
-                        <div class="page-txt-btn-cont">
-                            <div class="text-cont">
-                                <h1>АКБ BARS</h1>
-                                <p>Компания «Кайнар – АКБ», Казахстан</p>
+                    <div class="sortpages-page">
+                        <img class="accum-main-pic" src="../allAssets/catalog-content/fromto-page-pic.png" alt="">
+                        <div class="accum-info">
+                            <h1 class="6">MAGNUM 60Ah</h1>
+                            <p>Цена действительна при сдаче старого аккумулятора аналогичной емкости в лом</p>
+                            <div>
+                                <p class="info-black">Емкость, Ач: <span class='info-grey'>60</span></p>
+                                <p class="info-black">Пусковой ток, А: <span class='info-grey'>500</span></p>
+                                <p class="info-black">Полярность: <span class='info-grey'>Прямая/Обратная</span></p>
+                                <p class="info-black">Клеммы: <span class='info-grey'>Толстые</span></p>
+                                <p class="info-black">Pазмеры (ДхШхВ), мм: <span class='info-grey'>242х175х190</span></p>
+                                <p class="info-black">Производитель: <span class='info-grey'>Magnum</span></p>
+                                <p class="info-black">Bес, кг: <span class='info-grey'>14.5</span></p>
                             </div>
-                            <button>ПОДРОБНЕЕ</button>
                         </div>
-                    </div>
-                    <div class='catalog-page'>
-                        <div class='catalog-page-bg'>
-                            <img src="../allAssets/catalog-content/7.png" alt="">
-                        </div>
-                        <div class="page-txt-btn-cont">
-                            <div class="text-cont">
-                                <h1>АКБ BOSCH</h1>
-                                <p>"VB Autobatterie Gmbh & Co. KgaA" ,  Германия, Гановер</p>
+                        <div class="price-and-order">
+                            <div class="price-cont">
+                                <h1>2199 руб.</h1>
+                                <p>2900 руб.</p>
                             </div>
-                            <button>ПОДРОБНЕЕ</button>
-                        </div>
-                    </div>
-                    <div class='catalog-page'>
-                        <div class='catalog-page-bg'>
-                            <img src="../allAssets/catalog-content/8.png" alt="">
-                        </div>
-                        <div class="page-txt-btn-cont">
-                            <div class="text-cont">
-                                <h1>АКБ EDCON</h1>
-                                <p>Компания «Кайнар – АКБ», Казахстан</p>
+                            <div class="choosen-addItem-btn-cont">
+                                <img id="minusCount" src="../allAssets/catalog-content/removeItem.svg">
+                                <button id="counter">00</button>
+                                <img id="plusCount" src="../allAssets/catalog-content/addItem.svg">
                             </div>
-                            <button>ПОДРОБНЕЕ</button>
-                        </div>
-                    </div>
-                    <div class='catalog-page'>
-                        <div class='catalog-page-bg'>
-                            <img src="../allAssets/catalog-content/9.png" alt="">
-                        </div>
-                        <div class="page-txt-btn-cont">
-                            <div class="text-cont">
-                                <h1>АКБ ENRUN</h1>
-                                <p>AUTOPART S.A. Польша, г. Мелец</p>
+                            <div class="choosen-bucket-btn-cont">
+                                <button>В КОРЗИНУ</button>
+                                <img src="../allAssets/catalog-content/choosen-bucket.svg">
                             </div>
-                            <button>ПОДРОБНЕЕ</button>
-                        </div>
-                    </div>
-                    <div class='catalog-page'>
-                        <div class='catalog-page-bg'>
-                            <img src="../allAssets/catalog-content/10.png" alt="">
-                        </div>
-                        <div class="page-txt-btn-cont">
-                            <div class="text-cont">
-                                <h1>АКБ MUTLU</h1>
-                                <p>MUTLU AKU, Турция</p>
-                            </div>
-                            <button>ПОДРОБНЕЕ</button>
-                        </div>
-                    </div>
-                    <div class='catalog-page'>
-                        <div class='catalog-page-bg'>
-                            <img src="../allAssets/catalog-content/11.png" alt="">
-                        </div>
-                        <div class="page-txt-btn-cont">
-                            <div class="text-cont">
-                                <h1>АКБ UNIX (WESTA)</h1>
-                                <p>Аккумуляторы производятся на заводах международной корпорации "WESTA"</p>
-                            </div>
-                            <button>ПОДРОБНЕЕ</button>
-                        </div>
-                    </div>
-                    <div class='catalog-page'>
-                        <div class='catalog-page-bg'>
-                            <img src="../allAssets/catalog-content/12.png" alt="">
-                        </div>
-                        <div class="page-txt-btn-cont">
-                            <div class="text-cont">
-                                <h1>АКБ ТЮМЕНСКИЙ МЕДВЕДЬ</h1>
-                                <p>ЗАО МПКФ "Алькор" Россия, г. Тюмень</p>
-                            </div>
-                            <button>ПОДРОБНЕЕ</button>
-                        </div>
-                    </div>
-                    <div class='catalog-page'>
-                        <div class='catalog-page-bg'>
-                            <img src="../allAssets/catalog-content/13.png" alt="">
-                        </div>
-                        <div class="page-txt-btn-cont">
-                            <div class="text-cont">
-                                <h1>Гелиевые АКБ OPTIMA</h1>
-                                <p>Производство: США/Мексика</p>
-                            </div>
-                            <button>ПОДРОБНЕЕ</button>
-                        </div>
-                    </div>
-                    <div class='catalog-page'>
-                        <div class='catalog-page-bg'>
-                            <img src="../allAssets/catalog-content/14.png" alt="">
-                        </div>
-                        <div class="page-txt-btn-cont">
-                            <div class="text-cont">
-                                <h1>Оригинальные АКБ</h1>
-                            </div>
-                            <button>ПОДРОБНЕЕ</button>
+                            <button class="more-info-btn">
+                                ПОДРОБНЕЕ
+                            </button>
                         </div>
                     </div>
                 </div>
-                <div class="catalog-text">
+                <div class="afterpage-text">
                     <p>
-                        На сайте PROauto59.ru вы можете купить автомобильные аккумуляторы в Перми, от иностранных и российских производителей. 
-                        В каталоге продукция из 13 брендов с постоянным пополнением. Заказы принимаются по телефону и в режиме онлайн. Не нашли в каталоге? Звоните нам +7 (342) 279-36-13, подберём для вас.
+                        Аккумуляторы Magnum сконструированы именно так, чтобы обеспечить мощность и надежность. Они производятся из импортных компонентов на современном оборудовании. 
+                        Батареи Магнум изготавливаются по технологии Ca/Ca, что способствует снижению расхода воды и саморазряда.
                     </p>
-                    <p>
-                        Доставку не осуществляем.
-                    </p>
-                    <p>
-                        Аккумулятор – запускает двигатель автотранспорта и служит источником электроэнергии в системе без генератора. Обеспечивает увеличение напряжения в сети во время работы двигателя и электрогенератора. 
-                        Необходимо знать, что запуск двигателя без исправного источника электричества (аккумуляторной батареи) и рабочего стартера – невозможен.
-                    </p>
-                    <p>
-                        Если у вас возникла необходимость в смене батареи и вы затрудняетесь, где купить аккумулятор в Перми, сначала обратите свое внимание на Пермский магазин «Pro auto». 
-                        Мы работаем более 20 лет и за это время зарекомендовали себя как достойная компания розничной продажи в Пермском крае. 
-                        С 1998 года фирма занимается продажей аккумуляторов для легковых автомобилей.
-                    </p>
-                    <p>
-                        С нашей фирмой сотрудничают сервисные центры по обслуживанию, поэтому все наши батареи тщательно проверяются специалистами перед продажей и имеют гарантийное и постгарантийное обслуживание.
-                    </p>
-                    <p>
-                        За долгие годы работы в розничных продажах мы стали профессионалами, и с уверенностью можем сказать, что способны обслужить любые легковые аккумуляторные батареи.
-                    </p>
-                    <div class="block-between-cat-text">
-                        <p>
-                            Наш сервис со специалистами и интернет-магазин с грамотными менеджерами всегда предоставляют:
-                        </p>
-                        <div class="cat-arrow-notation">
-                            <div class="cat-arrow-nat-cont">
-                                <img src="../allAssets/catalog-content/catalog-arrow.svg">
-                                <p>Надежные аккумуляторы</p>
+                    <div class="magnum-benefits">
+                        <h1>Преимущества аккумуляторной батареи Магнум</h1>
+                        <div class="mag-ben-grid">
+                            <div class="mag-ben-grid-page">
+                                <img src="../allAssets/catalog-content/icon1.svg" alt="">
+                                <p>Отличное сочетание цены и качества</p>
                             </div>
-                            <div class="cat-arrow-nat-cont">
-                                <img src="../allAssets/catalog-content/catalog-arrow.svg">
-                                <p>Широкий выбор источников питания</p>
+                            <div class="mag-ben-grid-page">
+                                <img src="../allAssets/catalog-content/icon2.svg" alt="">
+                                <p>Продолжительный срок службы</p>
                             </div>
-                            <div class="cat-arrow-nat-cont">
-                                <img src="../allAssets/catalog-content/catalog-arrow.svg">
-                                <p>Выбор брендов автоаккумуляторов</p>
+                            <div class="mag-ben-grid-page">
+                                <img src="../allAssets/catalog-content/icon3.svg" alt="">
+                                <p>Оптимальная емкость и пусковой ток</p>
                             </div>
-                            <div class="cat-arrow-nat-cont">
-                                <img src="../allAssets/catalog-content/catalog-arrow.svg">
-                                <p>Сервисное обслуживание</p>
+                            <div class="mag-ben-grid-page">
+                                <img src="../allAssets/catalog-content/icon4.svg" alt="">
+                                <p>Для стандартной комплектациии авто</p>
+                            </div>
+                            <div class="mag-ben-grid-page">
+                                <img src="../allAssets/catalog-content/icon5.svg" alt="">
+                                <p>Высокое качество по невысокой цене</p>
+                            </div>
+                            <div class="mag-ben-grid-page">
+                                <img src="../allAssets/catalog-content/icon6.svg" alt="">
+                                <p>Отличается низким самозарядом</p>
                             </div>
                         </div>
-                            <p>
-                                Необходимо помнить, <strong>что аккумулятор любой представленной марки и бренда может работать до 5 лет</strong>, но при этом важно проверять уровень электролита, что бы не допустить его полного разряда и замерзания. 
-                                Это можно сделать в нашем сервисном центре быстро и недорого. При соблюдении этих правил вы увеличите срок службы и сэкономите рубли.
-                            </p>
                     </div>
                     <p>
-                        <strong>По всем вопросам продажи, обслуживания или гарантийного ремонта</strong> вы всегда можете обратиться в наш сервисный центр в Перми.
-                    </p>
-                    <p>
-                        Если вы испытываете затруднения с поиском аккумуляторной батареи для своего авто, звоните нам! 
-                        Проконсультируем и дадим вам развёрнутую информацию, моможем разобраться с характеристиками и сделать правильный выбор.
-                    </p>
-                    <p>
-                        <strong>Мы рады каждому клиенту!</strong>
+                        На производстве аккумуляторов Магнум после каждой технологической операции обязательно проводится промежуточный контроль качества на короткое замыкание и обрыв цепи, что минимизирует процент заводского брака. Весь технологический процесс находится под контролем специалистов завода и соответствует международным нормам и стандартам. 
+                        Это обеспечивает выпуск батарей, полностью отвечающих требованиям автомобилей двадцать первого века.
                     </p>
                 </div>
             </div>
@@ -627,8 +666,8 @@
     <script src="../jsScripts/dropDownSrchBar.js"></script>
     <script src="../noUiSliderJs/nouislider.min.js"></script>
     <script src="../jsScripts/priceRange.js"></script>
-    <script src="../jsScripts/autoItmesScript.js"></script>
     <script src="../jsScripts/catalogDropDown.js"></script>
+    <script src="../jsScripts/pageChange.js"></script>
     <script src="../jsScripts/pageToUp.js"></script>
 </body>
 </html>
