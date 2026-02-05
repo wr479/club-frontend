@@ -284,11 +284,13 @@ input:focus {
     background-color: transparent;
     border: 4px solid rgba(197, 55, 32, 1);
 
+    cursor: pointer;
+}
+
+.swiper-slide-with-button-div > button > a {
     color: rgba(255, 255, 255, 1);
     font-size: 14px;
     font-weight: 700;
-
-    cursor: pointer;
 }
 
 .swiper-pagination {
@@ -1072,7 +1074,7 @@ input:focus {
     gap: 20px;
 }
 
-.footer-feedback > div > p {
+.footer-feedback > div > a {
     color: rgba(255, 255, 255, 1);
     font-size: 14px;
     font-weight: 500;
