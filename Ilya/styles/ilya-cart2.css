@@ -75,6 +75,17 @@ a {
     justify-content: center;
     align-items: center;
     margin-right: 60px;
+
+    position: relative;
+}
+
+.main-logo-cont > a {
+    width: 132px;
+    height: 58px;
+
+    position: absolute;
+    top: 21px;
+    left: 0;
 }
 
 .main-logo {
@@ -94,6 +105,7 @@ a {
     color: rgba(255, 255, 255, 1);
     font-size: 16px;
     font-weight: 500;
+    text-decoration: none;
 }
 
 .nav-links > a:hover {
@@ -235,11 +247,15 @@ a {
     height: 52px;
     background-color: transparent;
     border: 4px solid rgba(197, 55, 32, 1);
+  
+    cursor: pointer;
+}
+
+.banner-text > button > a {
     color: rgba(255, 255, 255, 1);
     font-size: 14px;
     font-weight: 700;
-
-    cursor: pointer;
+    text-decoration: none;
 }
 .section_main-info{
     height: 52px;
