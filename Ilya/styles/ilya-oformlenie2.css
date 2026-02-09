@@ -262,12 +262,13 @@ a {
     display: flex;
     justify-content: center;
 }
-.main_to_info > p{
+.main_to_info > p > a{
     color: rgba(197, 55, 32, 1);
     font-weight: 500;
     font-size: 12px;
     line-height: 100%;
     letter-spacing: 0%;
+    text-decoration: none;
 }
 .main_to_info{
     height: 45px;
@@ -276,12 +277,29 @@ a {
     align-items: center;
     margin-right: 1150px;
 }
-.main_to_info > h1{
+.main_to_info >h1{
     color: rgba(29, 29, 29, 1);
     font-weight: 500;
     font-size: 12px;
     line-height: 100%;
     letter-spacing: 0%;
+    text-decoration: none;
+}
+.main_to_info >h1 > a{
+    color: rgba(29, 29, 29, 1);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-decoration: none;
+}
+.main_to_info >h2{
+    color: rgba(29, 29, 29, 1);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-decoration: none;
 }
 .up-down{
     position: absolute;
