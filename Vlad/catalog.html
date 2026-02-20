@@ -6,9 +6,12 @@
     <title>Главная</title>
     <link rel="icon" href="../../egorchik/allAssets/favicon/car2.png" type="image/x-icon">
     <link rel="stylesheet" href="./vlad-catalog.css">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
 </head>
 <body>
-    <header>
+    <header id="upperPage">
         <div class="main-logo-cont">
             <img class="main-logo" src="./main-logo-and-bunner/logo.svg" alt="">
         </div>
@@ -23,7 +26,7 @@
             <div class="nav-button">
                 <button>ЗАКАЗАТЬ ЗВОНОК</button>
             </div>
-            <img class="nav-search" src="./nav-icons/лупа.svg" alt="">
+            <img id="searchbar-opener" class="nav-search" src="./nav-icons/лупа.svg" alt="">
             <div class="nav-bucket-and-counter">
                 <img class="bucket" src="./nav-icons/корзина пассивная.svg" alt="">
                 <div class="counter-circle">
@@ -32,10 +35,18 @@
             </div>
         </nav>
     </header>
-    <div class="swiper-container">
+    <div id="searchbar" class="search-bar">
+        <div class="input-cont">
+            <img src="../egorchik/allAssets/nav-icons/лупа2.svg" alt="">
+            <input placeholder="">
+        </div>
+        <button>НАЙТИ</button>
+        <img id="searchbar-closer" src="../egorchik/allAssets/nav-icons/крестик.svg" alt="">
+    </div>
+    <div class="swiper-container swiper1">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-                <img src="./main-logo-and-bunner/bunner.jpg" alt="">
+                <img src="../egorchik/allAssets/main-logo-and-bunner/bunner.jpg" alt="">
                 <div class="swiper-slide-title">
                     <div class="swiper-slide-with-button-div">
                         <h1>НАДЕЖНЫЕ, КАЧЕСТВЕННЫЕ АККУМУЛЯТОРЫ</h1>
@@ -44,7 +55,7 @@
                 </div>
             </div>
             <div class="swiper-slide">
-                <img src="./main-logo-and-bunner/bunner.jpg" alt="">
+                <img src="../egorchik/allAssets/main-logo-and-bunner/bunner.jpg" alt="">
                 <div class="swiper-slide-title">
                     <div class="swiper-slide-with-button-div">
                         <h1>НАДЕЖНЫЕ, КАЧЕСТВЕННЫЕ АККУМУЛЯТОРЫ</h1>
@@ -53,7 +64,7 @@
                 </div>
             </div>
             <div class="swiper-slide">
-                <img src="./main-logo-and-bunner/bunner.jpg" alt="">
+                <img src="../egorchik/allAssets/main-logo-and-bunner/bunner.jpg" alt="">
                 <div class="swiper-slide-title">
                     <div class="swiper-slide-with-button-div">
                         <h1>НАДЕЖНЫЕ, КАЧЕСТВЕННЫЕ АККУМУЛЯТОРЫ</h1>
@@ -62,7 +73,7 @@
                 </div>
             </div>
             <div class="swiper-slide">
-                <img src="./main-logo-and-bunner/bunner.jpg" alt="">
+                <img src="../egorchik/allAssets/main-logo-and-bunner/bunner.jpg" alt="">
                 <div class="swiper-slide-title">
                     <div class="swiper-slide-with-button-div">
                         <h1>НАДЕЖНЫЕ, КАЧЕСТВЕННЫЕ АККУМУЛЯТОРЫ</h1>
@@ -130,8 +141,8 @@
                     <button class="main__place">ОФОРМИТЬ ЗАКАЗ</button>
                 </div>
             </div>
-            <img class="main__arow-top" src="./imges/Group 5.png" alt="">
-            <img class="main__arow-bottom" src="./imges/Group 6.png" alt="">
+            <img id="iconUp" class="upstroke" src="../egorchik/allAssets/news-content/strokeUp.svg" alt="">
+            <img class="downstroke" src="../egorchik/allAssets/news-content/strokeDown.svg" alt="">
         </div>
     </main>
     <footer>
@@ -184,6 +195,8 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-    <script src="./slider.js"></script>
+    <script src="../egorchik/jsScripts/slider.js"></script>
+    <script src="../egorchik/jsScripts/dropDownSrchBar.js"></script>
+    <script src="../egorchik/jsScripts/pageToUp.js"></script>
 </body>
 </html>
