@@ -533,11 +533,9 @@ input:focus {
     color: #ffffff;
 }
 .first-cont_for_banner-second_chapter-second_chapter > button > a{
-    margin-top: 24px;
-    width: 172px;
-    height: 40px;
-    background-color: rgba(29, 29, 29, 1);
     color: #ffffff;
+    font-size: 12px;
+    font-weight: 700;
     text-decoration: none;
 }
 .cont-for_fotka-logo{

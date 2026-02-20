@@ -22,7 +22,7 @@
             <div class="nav-button">
                 <button>ЗАКАЗАТЬ ЗВОНОК</button>
             </div>
-            <img class="nav-search" src="./nav-icons/лупа.svg" alt="">
+            <img id="searchbar-opener" class="nav-search" src="./nav-icons/лупа.svg" alt="">
             <div class="nav-bucket-and-counter">
                 <img class="bucket" src="./nav-icons/корзина пассивная.svg" alt="">
                 <div class="counter-circle">
@@ -31,17 +31,27 @@
             </div>
         </nav>
     </header>
+    <div id="searchbar" class="search-bar">
+        <div class="input-cont">
+            <img src="../../egorchik/allAssets/nav-icons/лупа2.svg" alt="">
+            <input placeholder="">
+        </div>
+        <button>НАЙТИ</button>
+        <img id="searchbar-closer" src="../../egorchik/allAssets/nav-icons/крестик.svg" alt="">
+    </div>
     <div class="swiper-container">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-                <div class="gradient"></div>
                 <img class="tetya" src="contacts/UKAAAgCWcuA-1920 1.png" alt="">
+                <div class="gradient">
+                </div>
                 <div class="swiper-slide-title">
                     <div class="swiper-slide-with-button-div">
                         <h1>БУДЬТЕ НА СВЯЗИ С <br> КОМАНДОЙ PRO AUTO</h1>
                         <button>ПЕРЕЙТИ В КАТАЛОГ</button>
                     </div>
                 </div>
+            </div>
         </div>
         <div class="swiper-pagination"></div>
         <div class="swiper-scrollbar-lock"></div>
@@ -51,7 +61,7 @@
             <div class="mini-container">
                 <a class="red" href="№">ГЛАВНАЯ</a>
                 <img src="contacts/стрелка.png" alt="">
-                <a href="№">КОНТАКТЫ</a>
+                <a href="#">КОНТАКТЫ</a>
             </div>
         </section>
         <section class="contacts-section">
@@ -81,7 +91,8 @@
                         </div>
                     </div>
                     <div class="grid2">
-                        <img src="contacts/Frame 43.png" alt="">
+                        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A10bce039958f7d7b53107fa85ad082592c2c3e7214ce7c816d07d62e5b8f5dd0&amp;source=constructor"
+                         width="564" height="442" frameborder="0"></iframe>
                     </div>
                 </div>
         </section>
@@ -100,7 +111,7 @@
                 <p>Интересующий товар / услуга:</p>
                 <input class="dev-input" type="text">
                 <p>Сообщение*</p>
-                <input class="big-input" type="text">
+                <textarea class="big-input" type="text"></textarea>
             </div>
             <div class="checkbox-ilya">
                 <div class="checkbox-container">
@@ -163,5 +174,6 @@
             </div>
         </div>
     </footer>
+    <script src="../../egorchik/jsScripts/dropDownSrchBar.js"></script>
 </body>
 </html>

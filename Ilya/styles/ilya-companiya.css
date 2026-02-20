@@ -321,13 +321,12 @@ input:focus {
     height: 52px;
     background-color: #ffffff ;
     display: flex;
-    justify-content: center;
+    justify-content: start;
 }
 .main_to_info > p{
     color: rgba(197, 55, 32, 1);
     font-weight: 500;
     font-size: 12px;
-    line-height: 100%;
     letter-spacing: 0%;
 
 }
@@ -335,23 +334,21 @@ input:focus {
     color: rgba(197, 55, 32, 1);
     font-weight: 500;
     font-size: 12px;
-    line-height: 100%;
     letter-spacing: 0%;
     text-decoration: none;
 }
 .main_to_info{
     width: 200px;
-    height: 45px;
+    height: 50px;
     display: flex;
     gap: 16px;
     align-items: center;
-    margin-right: 1150px;
+    margin-left: 350px;
 }
 .main_to_info > h1{
     color: rgba(29, 29, 29, 1);
     font-weight: 500;
     font-size: 12px;
-    line-height: 100%;
     letter-spacing: 0%;
 }
 .about-company-sect{
@@ -447,8 +444,6 @@ input:focus {
     letter-spacing: 0%;
     text-align: center;
     text-decoration: underline;
-    text-decoration-style: solid;
-    text-decoration-thickness: 0%;
     color: #ffffff;
 }
 .cont-quest-galochka{
