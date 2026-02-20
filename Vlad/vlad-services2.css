@@ -44,6 +44,10 @@ nav {
     align-items: end;
 }
 
+main {
+    position: relative;
+}
+
 footer::before {
     width: 100%;
     height: 342px;
@@ -479,13 +483,13 @@ main {
 
 .main__headings{
     display: flex;
-
+    cursor: pointer;
     margin: 48px 0 52px;
 }
 
 .main__service-border{
     width: 564px;
-    border-bottom: 4px solid #C53720;
+    border-bottom: 2px solid #A5A5A5;
     
     display: flex;
     justify-content: center;
@@ -503,7 +507,7 @@ main {
 .main__heading-service{
     font-size: 24px;
     font-weight: 500;
-    color: #C53720;
+    color: #1D1D1D;
 }
 
 .main__heading-question{
@@ -609,7 +613,6 @@ main {
 
 .main__acceptance{
     height: 1418px;
-    background-color: #EDEDED;
     position: relative;
 
     display: flex;
@@ -636,8 +639,31 @@ main {
 
     display: flex;
     justify-content: center;
-
-    display: flex;
-    justify-content: center;
     margin: 88px 304px 34px;
 } 
+
+.upstroke {
+    position: absolute;
+    bottom: 105px;
+    right: 40px;
+    cursor: pointer;
+}
+
+.downstroke {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+}
+
+.hidden {
+    display: none;
+}
+
+.switch-border {
+    border-bottom: 4px solid #C53720;
+}
+
+.change-font {
+    color:#C53720;
+}
+

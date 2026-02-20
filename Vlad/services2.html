@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./vlad-services2.css">
 </head>
 <body>
-    <header>
+    <header id="upperPage">
         <div class="main-logo-cont">
             <img class="main-logo" src="./main-logo-and-bunner/logo.svg" alt="">
         </div>
@@ -74,8 +74,8 @@
                 <p>Ждём Вас в наших отделах продаж!</p>
             </div>
             <div class="main__headings">
-                <div class="main__service-border">
-                    <h1 class="main__heading-service">Заказать услугу</h1>
+                <div class="main__service-border switch-border">
+                    <h1 class="main__heading-service change-font">Заказать услугу</h1>
                 </div>
                 <div class="main__question-border">
                     <h1 class="main__heading-question">Задать вопрос</h1>
@@ -117,9 +117,8 @@
                     <img src="./assets/61513b9d-aabb-4379-9bd9-8742f3cce64a 1.png" alt="">
                 </div>
             </div>
-            <img class="main__diagnostics-arows" src="./assets/Вверх вниз.png" alt="">
         </section>
-        <section class="main__acceptance">
+        <section class="main__acceptance hidden">
             <div class="main__border2">
                 <h1 class="main__heading">ПРИЕМ АККУМУЛЯТОРОВ</h1>
             </div>
@@ -134,8 +133,8 @@
                 <div class="main__service-border">
                     <h1 class="main__heading-service">Заказать услугу</h1>
                 </div>
-                <div class="main__question-border">
-                    <h1 class="main__heading-question">Задать вопрос</h1>
+                <div class="main__question-border switch-border">
+                    <h1 class="main__heading-question change-font">Задать вопрос</h1>
                 </div>
             </div>
             <h1 class="main__heading-data">Данные для заказа</h1>
@@ -174,8 +173,9 @@
                     <img src="./assets/shutterstock_722489089 2.png" alt="">
                 </div>
             </div>
-            <img class="main__acceptance-arrows" src="./assets/Вверх вниз.png" alt="">
         </section>
+        <img id="iconUp" class="upstroke" src="../egorchik/allAssets/news-content/strokeUp.svg" alt="">
+        <img class="downstroke" src="../egorchik/allAssets/news-content/strokeDown.svg" alt="">
     </main>
     <footer>
         <div class="footer-logo-and-privacy">
@@ -227,5 +227,7 @@
         </div>
     </footer>
     <script src="../egorchik/jsScripts/dropDownSrchBar.js"></script>
+    <script src="../egorchik/jsScripts/servSwitchPages.js"></script>
+    <script src="../egorchik/jsScripts/pageToUp.js"></script>
 </body>
 </html>
