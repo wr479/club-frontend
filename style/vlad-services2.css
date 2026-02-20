@@ -425,7 +425,24 @@ main{
 
 }
 
+.main__question-border2{
+    width: 564px;
+    border-bottom: 4px solid #C53720;
+    
+    display: flex;
+    justify-content: center;
+
+}
+
 .main__question-border{
+    width: 564px;
+    border-bottom: 2px solid #A5A5A5;
+    
+    display: flex;
+    justify-content: center;
+}
+
+.main__service-border2{
     width: 564px;
     border-bottom: 2px solid #A5A5A5;
     
@@ -439,10 +456,22 @@ main{
     color: #C53720;
 }
 
+.main__heading-service2{
+    font-size: 24px;
+    font-weight: 500;
+    color: #1D1D1D;
+}
+
 .main__heading-question{
     font-size: 24px;
     font-weight: 500;
     color: #1D1D1D;
+}
+
+.main__heading-question2{
+    font-size: 24px;
+    font-weight: 500;
+    color: #C53720;
 }
 
 .main__heading-data{
