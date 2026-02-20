@@ -63,6 +63,11 @@ footer {
     position: relative;
     z-index: 3;
 }
+
+input:focus {
+    outline: none;
+}
+
 .main-logo-cont {
     height: 100px;
 
