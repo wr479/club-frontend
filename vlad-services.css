@@ -326,7 +326,7 @@ main{
     display: flex;
     gap: 16px;
 
-    margin-left: 256px;
+    padding-left: 256px;
 }
 
 .main__main-link{
@@ -356,7 +356,9 @@ main{
     height: 764px;
 
     background-color: #EDEDED;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .main__heading{
@@ -372,15 +374,13 @@ main{
     border-bottom: 4px solid #C53720;
     display: flex;
     justify-content: center;
-
-    margin-left: 736px;
 }
 
 .main__description{
     width: 892px;
     font-size: 24px;
     font-weight: 500;
-    margin: 32px 374px 36px 374px;
+    margin: 32px 0px 36px 0px;
     text-align: center;
 }
 
@@ -388,8 +388,6 @@ main{
     display: grid;
     grid-template-columns: repeat(2, 552px);
     gap: 24px;
-
-    margin-left: 256px;
 }
 
 .main__product{
