@@ -487,13 +487,16 @@ input:focus {
     flex-direction: column;
 }
 .license-wrapper{
-    height: 80px;
     width: 1398px;
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+
+.fixed {
     margin-top: 88px;
 }
+
 .cont-for-license{
     height:48px;
     display: flex;
@@ -718,7 +721,6 @@ input:focus {
 .value-opinion-cont{
     width: 892px;
     height: 28px;
-    margin-top:32px;
     display: flex;
     justify-content: center;
 }
@@ -729,26 +731,53 @@ input:focus {
     letter-spacing: 0%;
     text-align: center;
 }
-.cont-for-client_sergey{
-    width: 936px;
+
+.cont-for_ramki-sergey {
+    background-image: url('../main-img/sergey.png');
+}
+
+.cont-for-client_sergey {
     height:168px;
-    display: flex;
+}
+
+.swiper {
+    width: 75%;
     margin-top: 70px;
-    justify-content: space-between;
-    align-items: center;
 }
-.cont-for_sergey{
-    position:relative;
-    width: 174px;
+
+.swiper-wrapper {
     height: 168px;
-    z-index: -1;
-    left: 0px;
 }
-.cont-for_ramki-sergey{
-    position: absolute;
-    z-index: 2;
-    background-image: url(../main-img/sergey.png);
+
+.swiper-slide {
+    height: 168px;
+    display: flex !important;
+    justify-content: center;
 }
+
+.swiper-button-next {
+    background-image: url('../main-img/Стрелка\ активная.png');
+    background-size: cover;
+    color: transparent !important;
+}
+
+.swiper-button-next:active {
+    background-image: url('../main-img/Стрелка\ активная\ \(1\).png');
+    transform: rotate(180deg);
+}
+
+.swiper-button-prev {
+    background-image: url('../main-img/Стрелка\ активная.png');
+    background-size: cover;
+    transform: rotate(180deg);
+    color: transparent !important;
+}
+
+.swiper-button-prev:active {
+    background-image: url('../main-img/Стрелка\ активная\ \(1\).png');
+    transform: rotate(360deg);
+}
+
 .cont-for-text_after-sergey{
     width: 840px;
     height: 134px;

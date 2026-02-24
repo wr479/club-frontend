@@ -13,3 +13,4 @@ const bottomSlider = new Swiper('.bottom-swiper', {
         prevEl: '.swiper-button-prev',
     },
 })
+

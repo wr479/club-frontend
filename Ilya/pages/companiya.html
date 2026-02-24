@@ -6,6 +6,10 @@
     <title>Document</title>
     <link rel="icon" href="../../egorchik/allAssets/favicon/car2.png" type="image/x-icon">
     <link rel="stylesheet" href="../styles/ilya-companiya.css">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
 </head>
 <body>
     <header id="upperPage">
@@ -104,7 +108,7 @@
             </div>
         </section>
         <section class="licens-sect">
-            <div class="license-wrapper">
+            <div class="license-wrapper fixed">
                 <div class="cont-for-license container">
                     <p>ЛИЦЕНЗИИ</p>
                 </div>
@@ -275,18 +279,26 @@
                     <div class="value-opinion-cont">
                         <p>Для нас ценно любое Ваше мнение.</p>
                     </div>
-                    <div class="cont-for-client_sergey">
-                        <div class="cont-for_left-strelka">
-                            <img src="../main-img/Стрелка активная (1).png" alt="">
-                        </div>
-                        <div class="cont-for_sergey">
-                            <div class="cont-for_ramki-sergey">
-                                <img src="../main-img/Rectangle 103.png" alt="">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="cont-for_ramki-sergey">
+                                    <img src="../../Ilya/main-img/Rectangle 103.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="cont-for_ramki-sergey">
+                                    <img src="../../Ilya/main-img/Rectangle 103.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="cont-for_ramki-sergey">
+                                    <img src="../../Ilya/main-img/Rectangle 103.png" alt="">
+                                </div>
                             </div>
                         </div>
-                        <div class="cont-for_right-strelka">
-                            <img src="../main-img/Стрелка активная.png" alt="">
-                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
                     </div>
                     <div class="cont-for-text_after-sergey">
                         <div class="cont-for-text_andrey">
@@ -356,6 +368,8 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="../../egorchik/jsScripts/companySlider.js"></script>
     <script src="../../egorchik/jsScripts/dropDownSrchBar.js"></script>
     <script src="../../egorchik/jsScripts/pageToUp.js"></script>
 </body>
