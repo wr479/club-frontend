@@ -361,6 +361,8 @@ input:focus {
     background-color: #ffffff ;
     display: flex;
     justify-content: center;
+
+    position: relative;
 }
 .news_Boss-Block{
     height:772px;
@@ -410,11 +412,19 @@ input:focus {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    transition: opacity 0.3s ease;
+    opacity: 1;
 }
+
+.hidden {
+    opacity: 0;
+}
+
 .first-cont-for_koleso{
     width: 1128px;
     height: 310px;
-    background-image: url(../main-img/red-koleso.png);
+    background-image: url('../main-img/red-koleso.png');
 }
 .cont-for-logo_fotka{
     width: 237px;
@@ -462,6 +472,8 @@ input:focus {
     flex-direction: row;
     padding-top: 52px;
     justify-content: space-between;
+    position: absolute;
+    bottom: 130px;
 }
 .cont-for-first_strelki{
     width: 180px;
@@ -469,7 +481,13 @@ input:focus {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
+    opacity: 0.6;
 }
+
+.cont-for-first_strelki:active {
+    opacity: 1;
+}
+
 .cont-for-text-in_strelki{
     width: 128px;
     height:20px;
@@ -487,6 +505,8 @@ input:focus {
 .cont-for-img-in_strelki{
     width: 52px;
     height: 52px;
+    cursor: pointer;
+    transform: rotate(180deg);
 }
 .cont-for-second_strelki{
     width: 180px;
@@ -494,6 +514,10 @@ input:focus {
     display: flex;
     flex-direction: row;
     align-items: center;
+    opacity: 0.6;
+}
+.cont-for-second_strelki:active {
+    opacity: 1;
 }
 .cont-for-text-in_strelki_second{
     width: 128px;
@@ -502,17 +526,17 @@ input:focus {
     display: flex;
     align-items: center;
 }
-.cont-for-text-in_strelki > p{
+.cont-for-text-in_strelki > p {
     font-weight: 700;
     font-size: 16px;
     line-height: 100%;
     letter-spacing: 0%;
     color: rgba(197, 55, 32, 1);
-    opacity: 60%;
 }
 .cont-for-img-in_strelki_second{
     width: 52px;
     height: 52px;
+    cursor: pointer;
 }
 .FAQ::before {
     width: 100%;
