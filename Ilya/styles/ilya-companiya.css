@@ -319,16 +319,21 @@ input:focus {
 }
 .section_main-info{
     height: 52px;
-    background-color: #ffffff ;
     display: flex;
-    justify-content: start;
+    align-items: center;
+    justify-content: center;
+}
+
+.main_to_info{
+    height: 45px;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    width: 80%;
 }
 .main_to_info > p{
-    color: rgba(197, 55, 32, 1);
-    font-weight: 500;
-    font-size: 12px;
-    letter-spacing: 0%;
-
+    text-align: center;
+    height: 25px;
 }
 .main_to_info > p > a{
     color: rgba(197, 55, 32, 1);
@@ -336,14 +341,6 @@ input:focus {
     font-size: 12px;
     letter-spacing: 0%;
     text-decoration: none;
-}
-.main_to_info{
-    width: 200px;
-    height: 50px;
-    display: flex;
-    gap: 16px;
-    align-items: center;
-    margin-left: 350px;
 }
 .main_to_info > h1{
     color: rgba(29, 29, 29, 1);

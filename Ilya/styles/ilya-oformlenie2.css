@@ -322,11 +322,6 @@ input:focus {
     font-weight: 700;
     text-decoration: none;
 }
-.section_main-info{
-    height: 52px;
-    display: flex;
-    justify-content: center;
-}
 .main_to_info > p > a{
     color: rgba(197, 55, 32, 1);
     font-weight: 500;
@@ -335,12 +330,23 @@ input:focus {
     letter-spacing: 0%;
     text-decoration: none;
 }
+.section_main-info{
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .main_to_info{
     height: 45px;
     display: flex;
     gap: 16px;
     align-items: center;
-    margin-right: 1150px;
+    width: 80%;
+}
+.main_to_info > p{
+    text-align: center;
+    height: 25px;
 }
 .main_to_info >h1{
     color: rgba(29, 29, 29, 1);
