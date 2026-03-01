@@ -81,6 +81,7 @@ footer {
 
 a {
     cursor: pointer;
+    text-decoration:none
 }
 
 input:focus {
@@ -298,12 +299,16 @@ input:focus {
     height: 52px;
     background-color: transparent;
     border: 4px solid rgba(197, 55, 32, 1);
-
     color: rgba(255, 255, 255, 1);
     font-size: 14px;
     font-weight: 700;
-
     cursor: pointer;
+}
+.swiper-slide-with-button-div > button > a {
+    color: rgba(255, 255, 255, 1);
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
 }
 
 .swiper-pagination {

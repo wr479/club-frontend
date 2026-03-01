@@ -309,6 +309,13 @@ textarea:focus {
 
     cursor: pointer;
 }
+.swiper-slide-with-button-div > button > a {
+    color: rgba(255, 255, 255, 1);
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
 
 .swiper-pagination {
     margin-bottom: 50px;
