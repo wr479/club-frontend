@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Главная</title>
+    <title>Корзина</title>
     <link rel="icon" href="../../egorchik/allAssets/favicon/car2.png" type="image/x-icon">
     <link rel="stylesheet" href="./vlad-catalog.css">
     <link
@@ -17,11 +17,11 @@
         </div>
         <nav>
             <div class="nav-links">
-                <a>КОМПАНИЯ</a>
-                <a>КАТАЛОГ</a>
-                <a>УСЛУГИ</a>
-                <a>ИНФОРМАЦИЯ</a>
-                <a>КОНТАКТЫ</a>
+                <a href="../Ilya/pages/companiya.html">КОМПАНИЯ</a>
+                <a href="../html's/catalog1.html">КАТАЛОГ</a>
+                <a href="../Vlad/services.html">УСЛУГИ</a>
+                <a href="../Ilya/pages/information.html">ИНФОРМАЦИЯ</a>
+                <a href="../Roman/контакты/contacts.html">КОНТАКТЫ</a>
             </div>
             <div class="nav-button">
                 <button>ЗАКАЗАТЬ ЗВОНОК</button>
@@ -50,46 +50,20 @@
                 <div class="swiper-slide-title">
                     <div class="swiper-slide-with-button-div">
                         <h1>НАДЕЖНЫЕ, КАЧЕСТВЕННЫЕ АККУМУЛЯТОРЫ</h1>
-                        <button>ПЕРЕЙТИ В КАТАЛОГ</button>
+                        <a href="../egorchik/html's/catalog2.html">ПЕРЕЙТИ В КАТАЛОГ</a>
                     </div>
                 </div>
             </div>
-            <div class="swiper-slide">
-                <img src="../egorchik/allAssets/main-logo-and-bunner/bunner.jpg" alt="">
-                <div class="swiper-slide-title">
-                    <div class="swiper-slide-with-button-div">
-                        <h1>НАДЕЖНЫЕ, КАЧЕСТВЕННЫЕ АККУМУЛЯТОРЫ</h1>
-                        <button>ПЕРЕЙТИ В КАТАЛОГ</button>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <img src="../egorchik/allAssets/main-logo-and-bunner/bunner.jpg" alt="">
-                <div class="swiper-slide-title">
-                    <div class="swiper-slide-with-button-div">
-                        <h1>НАДЕЖНЫЕ, КАЧЕСТВЕННЫЕ АККУМУЛЯТОРЫ</h1>
-                        <button>ПЕРЕЙТИ В КАТАЛОГ</button>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <img src="../egorchik/allAssets/main-logo-and-bunner/bunner.jpg" alt="">
-                <div class="swiper-slide-title">
-                    <div class="swiper-slide-with-button-div">
-                        <h1>НАДЕЖНЫЕ, КАЧЕСТВЕННЫЕ АККУМУЛЯТОРЫ</h1>
-                        <button>ПЕРЕЙТИ В КАТАЛОГ</button>
-                    </div>
-                </div>
-            </div>
-        </div>
         <div class="swiper-pagination"></div>
         <div class="swiper-scrollbar-lock"></div>
     </div>
     <main>
         <div class="main__nav">
-            <a class="main__main-link" href="#">ГЛАВНАЯ</a>
-            <img class="main__arrow" src="./imges/стрелка.png" alt="">
-            <span class="main__services">УСЛУГИ</span>
+            <div class="nav-wrapper">
+                <a class="link" href="../egorchik/html's/main.html">ГЛАВНАЯ</a>
+                <img src="./assets/стрелка.png" alt="">
+                <a href="./services.html" class="main__services">УСЛУГИ</a>
+            </div>   
         </div>
         <div class="main__basket-block">
             <h1 class="main__basket-text">КОРЗИНА</h1>
@@ -98,7 +72,7 @@
                     <img class="main__battery" src="./imges/Frame 1.png" alt="">
                     <div class="main__button-stock">
                         <p>MAGNUM 60Ah</p>
-                        <button>В НАЛИЧИИ</button>
+                        <div>В НАЛИЧИИ</div>
                     </div>
                     <div class="main__product-price">
                         <p class="main__price">2199 руб.</p>
@@ -107,7 +81,7 @@
                     <div class="main__number-items">
                         <div class="main__symbols">-</div>
                         <div class="main__number">01</div>
-                        <div class="main__symbols">01</div>
+                        <div class="main__symbols">+</div>
                     </div>
                     <p class="main__number-items-price">2199 руб.</p>
                     <img class="main__cross" src="./imges/крестик.png" alt="">
@@ -116,7 +90,7 @@
                     <img class="main__battery" src="./imges/Frame 1.png" alt="">
                     <div class="main__button-stock">
                         <p>MAGNUM 60Ah</p>
-                        <button>В НАЛИЧИИ</button>
+                        <div>В НАЛИЧИИ</div>
                     </div>
                     <div class="main__product-price">
                         <p class="main__price">2199 руб.</p>
@@ -125,7 +99,7 @@
                     <div class="main__number-items">
                         <div class="main__symbols">-</div>
                         <div class="main__number">01</div>
-                        <div class="main__symbols">01</div>
+                        <div class="main__symbols">+</div>
                     </div>
                     <p class="main__number-items-price">2199 руб.</p>
                     <img class="main__cross" src="./imges/крестик.png" alt="">
@@ -136,9 +110,9 @@
                     <p class="main__total">4398 руб.</p>
                 </div>
                 <div class="main__processing">
-                    <button class="main_buy">ПРОДОЛЖИТЬ ПОКУПКИ</button>
+                    <a class="main_buy" href="../Ilya/pages/oformlenie.html">ПРОДОЛЖИТЬ ПОКУПКИ</a>
                     <button class="main__order">РАСПЕЧАТАТЬ ЗАКАЗ</button>
-                    <button class="main__place">ОФОРМИТЬ ЗАКАЗ</button>
+                    <a class="main__place" href="../Ilya/pages/oformlenie.html">ОФОРМИТЬ ЗАКАЗ</a>
                 </div>
             </div>
             <img id="iconUp" class="upstroke" src="../egorchik/allAssets/news-content/strokeUp.svg" alt="">
