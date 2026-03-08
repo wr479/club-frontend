@@ -87,28 +87,30 @@
             <div class="main__data">
                 <form class="main__input-data">
                     <div class="main__input-data-container">
-                        <label for="name">Ваше имя:<span>*</span></label>
-                        <input class="main__input" id="name" name="user-name" type="text">
+                        <label for="form-name">Ваше имя:<span>*</span></label>
+                        <input class="main__input" id="form-name" name="user-name" type="text">
                     </div>
                     <div class="main__input-data-container">
-                        <label for="phone">Телефон:<span>*</span></label>
-                        <input class="main__input" id="phone" name="user-phone" type="tel">
+                        <label for="form-phone">Телефон:<span>*</span></label>
+                        <input class="main__input" id="form-phone" name="user-phone" type="tel">
                     </div>
                     <div class="main__input-data-container">
-                        <label for="E-mail">E-mail: </label>
-                        <input class="main__input" id="E-mail" name="user-email" type="email">
+                        <label for="email">E-mail: </label>
+                        <input class="main__input" id="email" name="user-email" type="email">
                     </div>
                     <div class="main__input-data-container">
-                        <label for="service-form">Услуга</label>
-                        <input class="main__input-service" id="service-form" name="user-service" type="text" placeholder="Диагностика аккумулятора автомобиля">
+                        <label for="form-service">Услуга</label>
+                        <input class="main__input-service" id="form-service" name="user-service" type="text" placehodlder="Диагностика аккумулятора автомобиля">
                     </div>
                     <div class="main__input-data-container padding-bottom">
-                        <label for="message">Сообщение</label>
-                        <textarea class="main__message" id="message" name="user-message"></textarea>
+                        <label for="form-message">Сообщение</label>
+                        <textarea class="main__message" id="form-message" name="user-message"></textarea>
                     </div>
-                    <div class="main__checkbox-processing">
-                        <input class="main__checkbox" id="agreement" name="agreement" value="agreement" type="checkbox">
-                        <label for="agreement">Я согласен на <span>обработку персональных данных</span></label>
+                    <div class="main__input-checkbox">
+                        <label class="main__checkbox-processing" for="form-agreement">
+                        <input class="main__checkbox" id="form-agreement" name="agreement" value="agreement" type="checkbox">
+                        Я согласен на <span>обработку персональных данных</span>
+                        </label>
                     </div>
                     <div class="main__button-call">
                         <p>* Обязательное поле</p>
@@ -156,13 +158,15 @@
                         <label for="service-form">Услуга</label>
                         <input class="main__input-service" id="service-form" name="user-service" type="text" placeholder="Диагностика аккумулятора автомобиля">
                     </div>
-                    <div class="main__input-data-container">
+                    <div class="main__input-data-container padding-bottom">
                         <label for="message">Сообщение</label>
                         <textarea class="main__message" id="message" name="user-message"></textarea>
                     </div>
-                    <div class="main__checkbox-processing">
+                    <div class="main__input-checkbox">
+                        <label class="main__checkbox-processing" for="agreement">
                         <input class="main__checkbox" id="agreement" name="agreement" value="agreement" type="checkbox">
-                        <label for="agreement">Я согласен на <span>обработку персональных данных</span></label>
+                        Я согласен на <span>обработку персональных данных</span>
+                        </label>
                     </div>
                     <div class="main__button-call">
                         <p>* Обязательное поле</p>
