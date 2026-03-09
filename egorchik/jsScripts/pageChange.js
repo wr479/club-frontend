@@ -23,4 +23,20 @@ hideBtn.forEach(function (btn) {
     }, false);
 });
 
+const allCatalog = document.querySelector('.pages-grid');
+allCatalog.addEventListener('click', (event) => {
+    const target = event.target
 
+    const choosenCard = target.closest('.choosen-addItem-btn-cont')
+    if (!choosenCard) return
+
+    let localCounter = choosenCard.querySelector('#counter');
+
+    if (target.classList.contains('increment')) {
+        localCounter.textContent++
+    } else if (target.classList.contains('decrement')) {
+        if (localCounter.textContent > 0) {
+            localCounter.textContent--
+        }
+    }
+})

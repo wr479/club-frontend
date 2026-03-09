@@ -1,52 +1,11 @@
 {
   "cart": [
     {
-      "id": "591f",
+      "id": "edd8",
       "name": "MAGNUM 60Ah",
       "emkost": 60,
-      "price": 2199
-    },
-    {
-      "id": "0fff",
-      "name": "MAGNUM 60Ah",
-      "emkost": 60,
-      "price": 2199
-    },
-    {
-      "id": "ab75",
-      "name": "MAGNUM 60Ah",
-      "emkost": 60,
-      "price": 2199
-    },
-    {
-      "id": "b4af",
-      "name": "MAGNUM 60Ah",
-      "emkost": 60,
-      "price": 2199
-    },
-    {
-      "id": "9c18",
-      "name": "MAGNUM 60Ah",
-      "emkost": 60,
-      "price": 2199
-    },
-    {
-      "id": "1410",
-      "name": "MAGNUM 60Ah",
-      "emkost": 60,
-      "price": 2199
-    },
-    {
-      "id": "3bb5",
-      "name": "MAGNUM 60Ah",
-      "emkost": 60,
-      "price": 2199
-    },
-    {
-      "id": "bb3a",
-      "name": "MAGNUM 60Ah",
-      "emkost": 60,
-      "price": 2199
+      "price": 10995,
+      "quantity": 5
     }
   ],
   "totalPrice": "100",
