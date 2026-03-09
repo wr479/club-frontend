@@ -6,6 +6,13 @@
       "emkost": 60,
       "price": 10995,
       "quantity": 5
+    },
+    {
+      "id": "f275",
+      "name": "MAGNUM 60Ah",
+      "emkost": 60,
+      "price": 6597,
+      "quantity": 3
     }
   ],
   "totalPrice": "100",
