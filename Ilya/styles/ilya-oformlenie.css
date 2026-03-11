@@ -804,6 +804,34 @@ input:focus {
     width: 5px;
     height: 15px;
 }
+
+.edit-tools {
+    display: none;
+    color: black;
+    font-size: 24px;
+    margin: -5px 30px;
+}
+
+.edit-tools-delete-item {
+    color: rgb(172, 21, 21);
+    font-weight: 800;
+    text-align: end;
+    cursor: pointer;
+}
+
+.edit-tools-wrapper {
+    display: flex;
+    gap: 20px;
+}
+
+.edit-tools-wrapper > span {
+    cursor: pointer;
+}
+
+.active-edit {
+   opacity: 0.8; 
+}
+
 .upstroke {
     position: absolute;
     bottom: 105px;

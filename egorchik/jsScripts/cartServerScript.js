@@ -12,7 +12,8 @@ postBtn.forEach((el) => {
         let obj = {
             name: titleOfItem.textContent,
             emkost: Number(emkostOfItem.getAttribute('data-val')),
-            price: parseInt(priceOfItem.textContent) * Number(quantityOfItem.textContent),
+            price: parseInt(priceOfItem.textContent),
+            sum: parseInt(priceOfItem.textContent) * Number(quantityOfItem.textContent),
             quantity: Number(quantityOfItem.textContent),
         }
 

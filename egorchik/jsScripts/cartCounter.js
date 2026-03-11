@@ -10,12 +10,12 @@ fetch('http://localhost:3000/cart')
         console.log(json)
         cartCounter.textContent = json.length;
 
-        let totalJSON = []
-        for(let item of json) {
-            totalJSON.push(item.price)
-        }
-        let sumOfTotalJSON = totalJSON.reduce((prev, curr) => prev + curr, 0)
-        console.log(sumOfTotalJSON);
+        // let totalJSON = []
+        // for(let item of json) {
+        //     totalJSON.push(item.sum)
+        // }
+        // let sumOfTotalJSON = totalJSON.reduce((prev, curr) => prev + curr, 0)
+        // console.log(sumOfTotalJSON);
     })
     .catch((e) => {
         console.log(e)
