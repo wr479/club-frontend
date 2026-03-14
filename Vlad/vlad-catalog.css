@@ -474,7 +474,7 @@ input:focus {
     color: #C53720;
 }
 
-.main__button-stock button{
+.main__button-stock a{
     width: 100px;
     height: 32px;
     font-size: 10px;
@@ -482,7 +482,8 @@ input:focus {
     color: #FFFFFF;
     padding: 12px 18px;
     background-color: #3CC051;
-    border: none;
+    text-decoration: none;
+
     cursor: pointer;
 }
 
