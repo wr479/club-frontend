@@ -115,6 +115,7 @@ textarea:focus {
     color: rgba(255, 255, 255, 1);
     font-size: 16px;
     font-weight: 500;
+    text-decoration: none;
 }
 
 .nav-links > a:hover {
@@ -278,7 +279,7 @@ textarea:focus {
     letter-spacing: 2px;
 }
 
-.swiper-slide-with-button-div > button {
+.swiper-slide-with-button-div > a {
     width: 216px;
     height: 52px;
     background-color: transparent;
@@ -287,7 +288,11 @@ textarea:focus {
     color: rgba(255, 255, 255, 1);
     font-size: 14px;
     font-weight: 700;
+    text-decoration: none;
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
 }
 
@@ -390,17 +395,26 @@ main {
 .main__nav{
     width: 100%;
     height: 52px;
-    display: flex;
-    gap: 16px;
-
-    margin-left: 256px;
+    margin-inline: auto ;
+    max-width: 70.5rem;
+    
+    position: relative;
+    
 }
 
-.main__main-link{
+.nav-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    position: absolute;
+    top: 1rem;
+}
+
+.link{
     color: #C53720;
     font-size: 12px;
     font-weight: 500;
-    margin-top: 20px;
 
     text-decoration: none;
 }
@@ -408,14 +422,14 @@ main {
 .main__arrow{
     width: 20px;
     height: 20px;
-    margin-top: 16px;
 }
 
 .main__services{
     font-size: 12px;
     font-weight: 500;
     color: #1D1D1D;
-    margin-top: 20px;
+
+    text-decoration: none;
 }
 
 .main__diagnostics{
@@ -517,9 +531,14 @@ main {
 }
 
 .main__heading-data{
+    width: 100%;
+    max-width: 1128px;
     font-size: 20px;
     font-weight: 500;
     color: #1D1D1D;
+
+    display: flex;
+    justify-content: flex-start;
     padding-bottom: 52px;
 }
 
@@ -528,7 +547,7 @@ main {
     gap: 24px;
 }
 
-.main__input-data label{
+.main__input-data-container{
     font-size: 16px;
     font-weight: 500;
 
@@ -543,17 +562,27 @@ main {
     color: #C53720;
 }
 
+input{
+    outline: none;
+}
+
 .main__input{
+    padding: 12px;
     width: 648px;
     height: 40px;
     border: 4px solid #1D1D1D;
-    color: #A5A5A5;
 }
 
 .main__message{
+    padding: 12px;
     width: 648px;
     height: 120px;
     border: 4px solid #1D1D1D;
+    outline: none;
+}
+
+.padding-bottom{
+    padding-bottom: 40px;
 }
 
 .main__input-service{
@@ -561,32 +590,42 @@ main {
     width: 648px;
     height: 40px;
     border: 4px solid #1D1D1D;
-    color: #A5A5A5;
 }
 
 .main__img{
-    margin-top: 27px;
-}
-
-.main__img > img {
-    width: 476px;
-    height: 460px;
+    margin-top: 24px;
+    max-width: 456px;
+    max-height: 458px;
 }
 
 .main__checkbox-processing{
     font-size: 16px;
     font-weight: 500;
-    padding-top: 24px;
+    padding-top: x;
     display: flex;
     align-items: center;
     gap: 16px;
 }
 
 .main__checkbox{
+    appearance: none;
     width: 36px;
     height: 36px;
     border: 4px solid #1D1D1D;
-    color: #C53720;
+    background-color: #FFFFFF;
+    margin-right: 16px;
+    position: relative;
+}
+
+.main__checkbox:checked::before{
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-color: #C53720;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .main__button-call{

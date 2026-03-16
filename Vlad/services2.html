@@ -14,11 +14,11 @@
         </div>
         <nav>
             <div class="nav-links">
-                <a>КОМПАНИЯ</a>
-                <a>КАТАЛОГ</a>
-                <a>УСЛУГИ</a>
-                <a>ИНФОРМАЦИЯ</a>
-                <a>КОНТАКТЫ</a>
+                <a href="../../Ilya/pages/companiya.html">КОМПАНИЯ</a>
+                <a href="../html's/catalog1.html">КАТАЛОГ</a>
+                <a href="../../Vlad/services.html">УСЛУГИ</a>
+                <a href="../../Ilya/pages/information.html">ИНФОРМАЦИЯ</a>
+                <a href="../../Roman/контакты/contacts.html">КОНТАКТЫ</a>
             </div>
             <div class="nav-button">
                 <button>ЗАКАЗАТЬ ЗВОНОК</button>
@@ -47,7 +47,7 @@
                 <div class="swiper-slide-title">
                     <div class="swiper-slide-with-button-div">
                         <h1>ПРОФЕССИОНАЛЬНАЯ ПОМОЩЬ ВАШЕМУ АВТОМОБИЛЮ</h1>
-                        <button>ПЕРЕЙТИ В КАТАЛОГ</button>
+                        <a href="../html's/catalog2.html">ПЕРЕЙТИ В КАТАЛОГ</a>
                     </div>
                 </div>
             </div>
@@ -57,9 +57,11 @@
     </div>
    <main>
         <div class="main__nav">
-            <a class="main__main-link" href="#">ГЛАВНАЯ</a>
-            <img class="main__arrow" src="./assets/стрелка.png" alt="">
-            <span class="main__services">УСЛУГИ</span>
+            <div class="nav-wrapper">
+                <a class="link" href="../egorchik/html's/main.html">ГЛАВНАЯ</a>
+                <img src="./assets/стрелка.png" alt="">
+                <a href="./services.html" class="main__services">УСЛУГИ</a>
+            </div>   
         </div>
         <section class="main__diagnostics">
             <div class="main__border">
@@ -83,39 +85,39 @@
             </div>
             <h1 class="main__heading-data">Данные для заказа</h1>
             <div class="main__data">
-                <div class="main__input-data">
-                    <label for="name">
-                        <p>Ваше имя:<span>*</span></p>
-                        <input class="main__input" type="text">
-                    </label>
-                    <label for="number">
-                        <p>Телефон:<span>*</span></p>
-                        <input class="main__input" type="text">
-                    </label>
-                    <label for="E-mail">
-                        <p>E-mail:</p>
-                        <input class="main__input" type="text">
-                    </label>
-                    <label for="service">
-                        <p>Услуга</p>
-                        <input class="main__input-service" type="text" placeholder="Диагностика аккумулятора автомобиля">
-                    </label>
-                    <label for="message">
-                        <p>Сообщение</p>
-                        <textarea class="main__message" type="text"></textarea>
-                    </label>
-                    <div class="main__checkbox-processing">
-                        <input class="main__checkbox" type="checkbox">
-                        <p>Я согласен на <span>обработку персональных данных</span></p>
+                <form class="main__input-data">
+                    <div class="main__input-data-container">
+                        <label for="form-name">Ваше имя:<span>*</span></label>
+                        <input class="main__input" id="form-name" name="user-name" type="text">
+                    </div>
+                    <div class="main__input-data-container">
+                        <label for="form-phone">Телефон:<span>*</span></label>
+                        <input class="main__input" id="form-phone" name="user-phone" type="tel">
+                    </div>
+                    <div class="main__input-data-container">
+                        <label for="email">E-mail: </label>
+                        <input class="main__input" id="email" name="user-email" type="email">
+                    </div>
+                    <div class="main__input-data-container">
+                        <label for="form-service">Услуга</label>
+                        <input class="main__input-service" id="form-service" name="user-service" type="text" placehodlder="Диагностика аккумулятора автомобиля">
+                    </div>
+                    <div class="main__input-data-container padding-bottom">
+                        <label for="form-message">Сообщение</label>
+                        <textarea class="main__message" id="form-message" name="user-message"></textarea>
+                    </div>
+                    <div class="main__input-checkbox">
+                        <label class="main__checkbox-processing" for="form-agreement">
+                        <input class="main__checkbox" id="form-agreement" name="agreement" value="agreement" type="checkbox">
+                        Я согласен на <span>обработку персональных данных</span>
+                        </label>
                     </div>
                     <div class="main__button-call">
                         <p>* Обязательное поле</p>
-                        <button class="main__button">ЗАКАЗАТЬ ЗВОНОК</button>
+                        <button class="main__button" type="submit">ЗАКАЗАТЬ ЗВОНОК</button>
                     </div>
-                </div>
-                <div class="main__img">
-                    <img src="./assets/61513b9d-aabb-4379-9bd9-8742f3cce64a 1.png" alt="">
-                </div>
+                </form>
+                <img  class="main__img" src="./assets/61513b9d-aabb-4379-9bd9-8742f3cce64a 1.png" alt="">
             </div>
         </section>
         <section class="main__acceptance hidden">
@@ -139,44 +141,44 @@
             </div>
             <h1 class="main__heading-data">Данные для заказа</h1>
             <div class="main__data">
-                <div class="main__input-data">
-                    <label for="name">
-                        <p>Ваше имя:<span>*</span></p>
-                        <input class="main__input" type="text">
-                    </label>
-                    <label for="number">
-                        <p>Телефон:<span>*</span></p>
-                        <input class="main__input" type="text">
-                    </label>
-                    <label for="E-mail">
-                        <p>E-mail:</p>
-                        <input class="main__input" type="text">
-                    </label>
-                    <label for="service">
-                        <p>Услуга</p>
-                        <input class="main__input-service" type="text" placeholder="Диагностика аккумулятора автомобиля">
-                    </label>
-                    <label for="message">
-                        <p>Сообщение</p>
-                        <textarea class="main__message" type="text"></textarea>
-                    </label>
-                    <div class="main__checkbox-processing">
-                        <input class="main__checkbox" type="checkbox">
-                        <p>Я согласен на <span>обработку персональных данных</span></p>
+                <form class="main__input-data">
+                    <div class="main__input-data-container">
+                        <label for="name">Ваше имя:<span>*</span></label>
+                        <input class="main__input" id="name" name="user-name" type="text">
+                    </div>
+                    <div class="main__input-data-container">
+                        <label for="phone">Телефон:<span>*</span></label>
+                        <input class="main__input" id="phone" name="user-phone" type="tel">
+                    </div>
+                    <div class="main__input-data-container">
+                        <label for="E-mail">E-mail: </label>
+                        <input class="main__input" id="E-mail" name="user-email" type="email">
+                    </div>
+                    <div class="main__input-data-container">
+                        <label for="service-form">Услуга</label>
+                        <input class="main__input-service" id="service-form" name="user-service" type="text" placeholder="Диагностика аккумулятора автомобиля">
+                    </div>
+                    <div class="main__input-data-container padding-bottom">
+                        <label for="message">Сообщение</label>
+                        <textarea class="main__message" id="message" name="user-message"></textarea>
+                    </div>
+                    <div class="main__input-checkbox">
+                        <label class="main__checkbox-processing" for="agreement">
+                        <input class="main__checkbox" id="agreement" name="agreement" value="agreement" type="checkbox">
+                        Я согласен на <span>обработку персональных данных</span>
+                        </label>
                     </div>
                     <div class="main__button-call">
                         <p>* Обязательное поле</p>
-                        <button class="main__button">ЗАКАЗАТЬ ЗВОНОК</button>
+                        <button class="main__button" type="submit">ЗАКАЗАТЬ ЗВОНОК</button>
                     </div>
-                </div>
-                <div class="main__img">
-                    <img src="./assets/shutterstock_722489089 2.png" alt="">
-                </div>
+                </form>
+                <img  class="main__img" src="./assets/shutterstock_722489089 2.png" alt="">
             </div>
+            <img id="iconUp" class="upstroke" src="../egorchik/allAssets/news-content/strokeUp.svg" alt="">
+            <img class="downstroke" src="../egorchik/allAssets/news-content/strokeDown.svg" alt="">
         </section>
-        <img id="iconUp" class="upstroke" src="../egorchik/allAssets/news-content/strokeUp.svg" alt="">
-        <img class="downstroke" src="../egorchik/allAssets/news-content/strokeDown.svg" alt="">
-    </main>
+     </main>  
     <footer>
         <div class="footer-logo-and-privacy">
             <img src="./main-logo-and-bunner/logo.svg" alt="">

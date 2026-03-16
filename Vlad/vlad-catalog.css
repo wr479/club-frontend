@@ -108,6 +108,7 @@ input:focus {
     color: rgba(255, 255, 255, 1);
     font-size: 16px;
     font-weight: 500;
+    text-decoration: none;
 }
 
 .nav-links > a:hover {
@@ -270,7 +271,7 @@ input:focus {
     letter-spacing: 2px;
 }
 
-.swiper-slide-with-button-div > button {
+.swiper-slide-with-button-div > a{
     width: 216px;
     height: 52px;
     background-color: transparent;
@@ -279,9 +280,15 @@ input:focus {
     color: rgba(255, 255, 255, 1);
     font-size: 14px;
     font-weight: 700;
+    text-decoration: none;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
 }
+
+
 
 .swiper-pagination {
     margin-bottom: 50px;
@@ -377,17 +384,25 @@ input:focus {
 .main__nav{
     width: 100%;
     height: 52px;
-    display: flex;
-    gap: 16px;
-
-    margin-left: 256px;
+    margin-inline: auto ;
+    max-width: 1128px;
+    
+    position: relative;
 }
 
-.main__main-link{
+.nav-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    position: absolute;
+    top: 16px;
+}
+
+.link{
     color: #C53720;
     font-size: 12px;
     font-weight: 500;
-    margin-top: 20px;
 
     text-decoration: none;
 }
@@ -395,14 +410,14 @@ input:focus {
 .main__arrow{
     width: 20px;
     height: 20px;
-    margin-top: 16px;
 }
 
 .main__services{
     font-size: 12px;
     font-weight: 500;
     color: #1D1D1D;
-    margin-top: 20px;
+
+    text-decoration: none;
 }
 
 .main__basket-block{
@@ -410,26 +425,25 @@ input:focus {
     background-color: #EDEDED;
 
     display: flex;
-    justify-content: center;
-    position: relative;
-
+    flex-direction: column;
+    align-items: center;
     padding-bottom: 88px;
+    position: relative;
 }
 
 .main__basket-text{
     font-weight: 700;
     font-size: 36px;
     color: #1D1D1D;
+    width: 100%;
+    max-width: 1128px;
 
-    position: absolute;
-    left: 256px;
-    top: 88px;
+    padding: 88px 0px 36px;
+    justify-content: flex-start;
 }
 
 .main__basket-border{
-    width: fit-content;
-
-    margin-top: 188px;
+    max-width: 1128px;
     background-color: #FFFFFF;
     border: 4px solid #A5A5A5;
 }
@@ -460,7 +474,7 @@ input:focus {
     color: #C53720;
 }
 
-.main__button-stock button{
+.main__button-stock a{
     width: 100px;
     height: 32px;
     font-size: 10px;
@@ -468,7 +482,8 @@ input:focus {
     color: #FFFFFF;
     padding: 12px 18px;
     background-color: #3CC051;
-    border: none;
+    text-decoration: none;
+
     cursor: pointer;
 }
 
@@ -592,6 +607,8 @@ input:focus {
     display: flex;
     justify-content: center;
     align-items: center;
+    
+    text-decoration: none;
 }
 
 .main__order{
@@ -619,6 +636,7 @@ input:focus {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
 }
 
 .upstroke {
