@@ -72,46 +72,47 @@
                     </div>
                     <div class="recipent-zakaz container">
                         <div class="oformlenie-inputs-cont">
-                            <div class="input-section">
-                            <div class="oformlenie-inputs">
-                            <div class="cont-for_inputs-checkbox">
-                                <div class="poluchatel">
-                                    Получатель
-                                </div>
-                    <div class="inputs">
-                    <div class="input2">
-                        <div class="input2-text">
-                            <p>Имя:</p>
-                            <span>*</span>
+                            <form action="">
+                                <div class="input-section">
+                                <div class="oformlenie-inputs">
+                                <div class="cont-for_inputs-checkbox">
+                                    <div class="poluchatel">
+                                        Получатель
+                                    </div>
+                        <div class="inputs">
+                        <div class="input2">
+                            <div class="input2-text">
+                                <p>Имя:</p>
+                                <span>*</span>
+                            </div>
+                            <input name="name" type="text" placeholder="Иван" pattern="[А-Яа-яЁё\s]+"  minlength="3" required>
                         </div>
-                        <input type="text">
+                        <div class="input1">
+                            <div class="input1-text">
+                                <p>Телефон:</p>
+                                <span>*</span>
+                            </div>
+                            <input name="phone" type="tel" placeholder="8 (000)-000-00-00" required>
+                        </div>
+                        <div class="input2">
+                            <div class="input2-text">
+                                <p>E-mail:</p>
+                            </div>
+                            <input name="mail" placeholder="ivanivan@gmail.com" type="email">
+                        </div>
                     </div>
-                    <div class="input1">
-                        <div class="input1-text">
-                            <p>Телефон:</p>
-                            <span>*</span>
+                    <div class="checkbox-ilya">
+                        <div class="checkbox-container">
+                            <div class="cont-for_input"><input class="checkbox" type="checkbox" name="accept" required></div>
+                            <p>Я согласен на<span class="red-txt">обработку персональных данных</span></p>
                         </div>
-                        <input type="text">
                     </div>
-                    <div class="input2">
-                        <div class="input2-text">
-                            <p>E-mail:</p>
-                        </div>
-                        <input type="text">
+                    <div class="obyazatelnoe-container">
+                        <button>ОФОРМИТЬ ЗАКАЗ</button>
+                        <p>* Обязательное поле</p> 
                     </div>
                 </div>
-                <div class="checkbox-ilya">
-                    <div class="checkbox-container">
-                        <div class="cont-for_input"><input class="checkbox" type="checkbox"></div>
-                        <p>Я согласен на<span class="red-txt">обработку персональных данных</span></p>
-                    </div>
-                </div>
-                <div class="obyazatelnoe-container">
-                    <button>ОФОРМИТЬ ЗАКАЗ</button>
-                    <p>* Обязательное поле</p>
-                    
-                </div>
-            </div>
+            </form>
                         </div>
                         </div>
                     </div>
@@ -124,24 +125,6 @@
                                         </div>
                                         <button>ИЗМЕНИТЬ</button>
                                     </div>
-                                    <!-- <div class="grids-zakaz2">
-                                        <div class="grids-zakaz2_text">
-                                            <span1>MAGNUM 60Ah</span1>
-                                            <span>1 шт. х 2199 руб.</span>
-                                        </div>
-                                        <div class="cont-for_second-text">
-                                            <span>2199 руб.</span>
-                                        </div>
-                                    </div>
-                                    <div class="grids-zakaz2">
-                                        <div class="grids-zakaz2_text">
-                                            <span1>MAGNUM 60Ah</span1>
-                                            <span>1 шт. х 2199 руб.</span>
-                                        </div>
-                                        <div class="cont-for_second-text">
-                                            <span>2199 руб.</span>
-                                        </div>
-                                    </div> -->
                                     <div class="grids-zakaz1">
                                         <div class="grids-zakaz1_text">
                                             <span>Итого</span>
@@ -213,4 +196,5 @@
     <script src="../../egorchik/jsScripts/cartOutputLogic.js"></script>
     <script src="../../egorchik/jsScripts/cartEditorScript.js"></script>
     <script src="../../egorchik/jsScripts/deleteItemFromCart.js"></script>
+    <script src="../../egorchik/jsScripts/formValidation.js"></script>
 </body>
