@@ -778,7 +778,7 @@ input:focus {
 }
 .input2-text{
     display: flex;
-    width: 128px;
+    justify-content: space-between;
 }
 .input2-text > span{
     font-weight: 500;
@@ -799,9 +799,9 @@ input:focus {
 
 .input1-text{
     display:flex;
-    width: 128px;
+    justify-content: space-between;
 }
-.input1-text > span{
+.input-data-cont > span{
     font-weight: 500;
     font-size: 16px;
     line-height: 100%;
@@ -816,6 +816,15 @@ input:focus {
     font-size: 16px;
     padding-left: 10px;
     font-weight: 500;
+}
+
+.input-data-cont {
+    display: flex;
+}
+
+.error-message {
+    display: inline;
+    color: rgba(255, 0, 0, 1);
 }
 
 .edit-tools {

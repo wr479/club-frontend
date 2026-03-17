@@ -1,20 +1,7 @@
 {
   "cart": [],
   "users": [
-    {
-      "id": "f528",
-      "name": "testUser",
-      "phone": "89171189188",
-      "mail": "mail",
-      "accept": "on"
-    },
-    {
-      "id": "766b",
-      "name": "тест",
-      "phone": "89171189188",
-      "mail": "testtest@gmail.com",
-      "accept": "on"
-    }
+    
   ],
   "totalPrice": "100",
   "$schema": "./node_modules/json-server/schema.json"
