@@ -39,12 +39,13 @@ phoneInput.addEventListener('blur', () => {
 const mailInput = document.querySelector('.mail-input');
 
 mailInput.addEventListener('blur', () => {
+    removeErr(mailInputEl, mailInput);
 
     if (mailInput.value === '') {
         return 
     } else if (!mailInput.value.includes("@")) {
         mailInput.style.border = "4px solid rgba(255, 0, 0, 1)";
-        mailInputEl.insertAdjacentHTML('beforeend', '<p class="error-message">Неверный формат</p>')
+        mailInputEl.insertAdjacentHTML('afterend', '<p class="error-message">Неверный формат</p>')
     }
 })
 
