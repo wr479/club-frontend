@@ -1,4 +1,5 @@
-const currentForm = document.forms[0];
+const currentForm = document.querySelector('.oformlenie-inputs-cont > form');
+console.log(currentForm)
 
 const nameInputEl = document.querySelector('[data-name-input]');
 const phoneInputEl = document.querySelector('[data-phone-input]');

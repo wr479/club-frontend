@@ -1,7 +1,13 @@
 {
   "cart": [],
   "users": [
-    
+    {
+      "id": "846d",
+      "name": "Тест",
+      "phone": "123123123123",
+      "mail": "",
+      "accept": "on"
+    }
   ],
   "totalPrice": "100",
   "$schema": "./node_modules/json-server/schema.json"

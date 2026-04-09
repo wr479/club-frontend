@@ -524,3 +524,220 @@ main{
     align-items: center;
     z-index: 2;
 }
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 11;
+}
+
+.header-pop-up1{
+    background-color: rgba(29, 29, 29, 1);
+    width: 500px;
+    height: 120px;
+    display: flex;
+    align-items: flex-end;
+    border-top: 4px solid rgba(197, 55, 32, 1);
+    
+}   
+
+.pop-up1-header-txt>h1{
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+}
+.pop-up1-header-txt>p{
+    font-size: 12px;
+    font-weight: 500;
+    color: white;
+}
+.phone-block{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+}
+.red-block{
+    z-index: 1;
+}
+.phone{
+    position: absolute;
+    z-index: 2;
+    margin-bottom: 39px;
+    left: 41px;
+    position: absolute;
+}
+.galochka{
+    position: absolute;
+    z-index: 2;
+    margin-bottom: 30px;
+    left: 25px;
+    position: absolute;
+}
+.header-pop-up-container{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.pop-up1-header-txt{
+    line-height: 25px;
+    margin-bottom: 30px;
+}
+.krest{
+   margin-left: 20px;
+   margin-bottom: 76px;
+
+   cursor: pointer;
+}
+.input-section{
+    height: 372px;
+    width: 500px;
+    background-color: white;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.inputs-red{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.input1{
+    margin-top: 40px;
+    line-height: 30px;
+    font-weight: 500;
+}
+.input1>input{
+    width: 420px;
+    height: 40px;
+    border: 4px solid black;
+}
+
+.input2{
+   line-height: 30px;
+   font-weight: 500;
+}
+.input2>input{
+    width: 420px;
+    height: 40px;
+    border: 4px solid black;
+}
+
+.checkbox-ilya{
+    display: flex;
+    justify-content: center;
+}
+.checkbox-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4px;
+    font-size: 16px;
+    font-weight: 500
+}
+.red-txt{
+    color: rgba(197, 55, 32, 1) ;
+    font-weight: 500;
+    font-size: 16px;
+}
+.checkbox{
+    background-color: white;
+    width: 36px;
+    height: 36px;
+    display: grid;
+    place-content: center;
+}
+
+.checkbox::before{
+    background-color: white;
+    width: 12px;
+    height: 12px;
+    content: "";
+    
+}
+    
+.checkbox:checked::before {
+    background-color:rgba(197, 55, 32, 1) ;
+}
+.obyazatelnoe-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 98px;
+    align-items:center ;
+}
+.obyazatelnoe-container> p{
+    color: rgba(197, 55, 32, 1);
+    font-size: 16px;
+    font-weight: 500;
+}
+.obyazatelnoe-container>button{
+    width: 163px;
+    height: 40px;
+    background-color:white;
+    color: rgba(197, 55, 32, 1);
+    font-weight: 700;
+    font-size: 12px;
+    border: 4px solid rgba(197, 55, 32, 1);
+    font-weight: 600;
+    font-size: 14px;
+
+    cursor: pointer;
+}
+
+.header-pop-up2{
+    background-color: rgba(29, 29, 29, 1);
+    width: 500px;
+    height: 120px;
+    display: flex;
+    align-items: flex-end;
+    
+}
+.pop-up2{
+    border: 4px solid rgba(60, 192, 81, 1);
+    display: none;
+}
+
+.car-section1{
+    height: 372px;
+    width: 500px;
+    background-color: white;
+    
+}
+
+.car-secttion-content{
+    margin-top: 20px;
+}
+
+.car-secttion-content-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.car-secttion-content>h1{
+    text-align: center;
+    color: rgba(60, 192, 81, 1);
+    font-size: 22px;
+    font-weight: 500;
+}
+.car-secttion-content>img{
+    width: 286px;
+    height: 244px;
+}
