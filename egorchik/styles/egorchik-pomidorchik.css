@@ -1308,7 +1308,49 @@ input:focus {
     font-weight: 700;
     font-size: 12px;
     border: 4px solid rgba(197, 55, 32, 1);
-    font-weight: 500;
-    font-size: 12px;
+    font-weight: 600;
+    font-size: 14px;
 
+    cursor: pointer;
+}
+
+.header-pop-up2{
+    background-color: rgba(29, 29, 29, 1);
+    width: 500px;
+    height: 120px;
+    display: flex;
+    align-items: flex-end;
+    
+}
+.pop-up2{
+    border: 4px solid rgba(60, 192, 81, 1);
+    display: none;
+}
+
+.car-section1{
+    height: 372px;
+    width: 500px;
+    background-color: white;
+    
+}
+
+.car-secttion-content{
+    margin-top: 20px;
+}
+
+.car-secttion-content-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.car-secttion-content>h1{
+    text-align: center;
+    color: rgba(60, 192, 81, 1);
+    font-size: 22px;
+    font-weight: 500;
+}
+.car-secttion-content>img{
+    width: 286px;
+    height: 244px;
 }
