@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../../egorchik/allAssets/favicon/car2.png" type="image/x-icon">
-    <link rel="stylesheet" href="./romchik.css">    
+    <link rel="stylesheet" href="./romchik.css">
+    <title>Контакты</title>    
 </head>
 <body>
     <header>
@@ -96,26 +97,26 @@
                     </div>
                 </div>
         </section>
-        <section class="question-section">
+        <form class="question-section">
             <div class="question-container">
                 <h1>ЗАДАТЬ ВОПРОС</h1>  
             </div>
             <h2>Менеджеры компании с радостью ответят на ваши вопросы и помогут с выбором нужной продукции.</h2>
             <div class="inputs-container">
                 <p>Ваше имя:*</p>
-                <input class="dev-input" type="text">
+                <input class="dev-input" type="text" name="firstName" pattern="[А-Яа-яЁё\s]+"  minlength="3" required>
                 <p>Телефон:*</p>
-                <input class="dev-input" type="text">
+                <input class="dev-input" type="text" name="phoneNumber" required>
                 <p>E-mail:*</p>
-                <input class="dev-input" type="text">
+                <input class="dev-input" type="text" name="email" required>
                 <p>Интересующий товар / услуга:</p>
-                <input class="dev-input" type="text">
+                <input class="dev-input" type="text" name="currenProduct">
                 <p>Сообщение*</p>
-                <textarea class="big-input" type="text"></textarea>
+                <textarea class="big-input" type="text" name="message" required></textarea>
             </div>
             <div class="checkbox-ilya">
                 <div class="checkbox-container">
-                    <input class="checkbox" type="checkbox">
+                    <input class="checkbox" type="checkbox" name="agree" required>
                     <p>Я согласен на<p class="red-txt">обработку персональных <br> данных</p></p>
                 </div>
             </div>
@@ -123,7 +124,7 @@
                 <p>* Обязательное поле</p>
                 <button>ОТПРАВИТЬ</button>
             </div>
-        </section>
+        </form>
     </main>
     <footer>
         <div class="footer-logo-and-privacy">
@@ -176,5 +177,6 @@
     </footer>
     <script src="../../egorchik/jsScripts/dropDownSrchBar.js"></script>
     <script src="../../egorchik/jsScripts/cartCounter.js"></script>
+    <script src="../../egorchik/jsScripts/questionValidation.js"></script>
 </body>
 </html>
