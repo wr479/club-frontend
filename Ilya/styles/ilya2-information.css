@@ -1062,3 +1062,65 @@ input:focus {
     width: 286px;
     height: 244px;
 }
+
+.modal-overlay-sec {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 11;
+}
+
+.pop-up2-sec{
+    border: 4px solid rgba(60, 192, 81, 1);
+    display: none;
+}
+
+.big-input {
+    width: 420px;
+    height: 88px;
+    border: 4px solid black;
+}
+
+.input-section2 {
+    height: 658px;
+    width: 500px;
+    background-color: white;
+}
+
+.car-section2 {
+    height: 658px;
+    width: 500px;
+    background-color: white;
+}
+
+.car-secttion-content2{
+    margin-top: 140px;
+}
+
+.car-secttion-content2>h1{
+    text-align: center;
+    color: rgba(60, 192, 81, 1);
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.car-secttion-content2>img{
+    width: 345px;
+    height: 315px;
+}
+
+.mod {
+    margin: -10px;
+    line-height: normal;
+    padding-bottom: 30px;
+}
+
+.mod-cont {
+    padding-right: 20px;
+}
