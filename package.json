@@ -1,5 +1,21 @@
 {
-  "dependencies": {
-    "json-server": "^1.0.0-beta.12"
+  "devDependencies": {
+    "browser-sync": "^3.0.4",
+    "concurrently": "^9.2.1",
+    "glob": "^13.0.6",
+    "gulp": "^5.0.1",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-replace": "^1.1.4",
+    "gulp-uglify": "^3.0.2",
+    "http-proxy-middleware": "^2.0.6",
+    "json-server": "^1.0.0-beta.15",
+    "merge-stream": "^2.0.0"
+  },
+  "scripts": {
+    "gulp": "gulp",
+    "json-server": "json-server --watch db.json --port 3001",
+    "dev": "concurrently \"npm run gulp\" \"npm run json-server\""
   }
 }
