@@ -1,5 +1,14 @@
 {
-  "cart": [],
+  "cart": [
+    {
+      "name": "MAGNUM 60Ah",
+      "emkost": 60,
+      "price": 2199,
+      "sum": 6597,
+      "quantity": 3,
+      "id": "8AkbV-0eL3A"
+    }
+  ],
   "users": [
     {
       "id": "846d",

@@ -155,7 +155,7 @@ function serve(done) {
                     next();
                 },
                 createProxyMiddleware('/api', {
-                    target: 'http://localhost:3001',
+                    target: 'http://localhost:3001', // json-server
                     changeOrigin: true,
                     pathRewrite: {
                         '^/api': ''
@@ -163,12 +163,12 @@ function serve(done) {
                 })
             ]
         },
-        port: 3000,
+        port: 8080, // ← Изменил с 3000 на 8080
         open: false,
         notify: false
     });
     
-    console.log('\n✅ Сервер запущен на http://localhost:3000');
+    console.log('\n✅ Фронтенд запущен на http://localhost:8080');
     console.log('📡 API прокси: /api/* → http://localhost:3001/*');
     done();
 }
