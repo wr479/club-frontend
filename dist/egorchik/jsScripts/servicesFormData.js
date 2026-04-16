@@ -1,18 +1,20 @@
 const orderForm = document.forms[0];
 const questionForm = document.forms[1];
 
+function logData(form) {
+    const formdata = new FormData(form);
+    const userData = Object.fromEntries(formdata);
+    console.log(userData);
+}
+
 orderForm.addEventListener('submit', (event) => {
     event.preventDefault();
 
-    const formdata = new FormData(orderForm);
-    const userData = Object.fromEntries(formdata);
-    console.log(userData);
+    logData(orderForm)
 })
 
 questionForm.addEventListener('submit', (event) => {
     event.preventDefault();
 
-    const formdata = new FormData(questionForm);
-    const userData = Object.fromEntries(formdata);
-    console.log(userData);
+    logData(questionForm)
 })

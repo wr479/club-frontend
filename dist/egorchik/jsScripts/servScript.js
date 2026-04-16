@@ -23,33 +23,36 @@ labels.forEach((label) => {
         activeId = label.id;
         triaglesFunc();
     });
-}); // с этой частью кода помогла нейронка
+});
+
+const activeLabel = 'url(../allAssets/services/active-label.png)';
+const passiveLabel = 'url(../allAssets/services/passive-label.png)';
+
+function switchTrianglesStyle(state1, state2, state3) {
+    pic1.style.display = state1;
+    state1 === 'block' 
+        ? border1.style.backgroundImage = activeLabel
+        : border1.style.backgroundImage = passiveLabel
+
+    pic2.style.display = state2;
+    state2 === 'block' 
+        ? border2.style.backgroundImage = activeLabel
+        : border2.style.backgroundImage = passiveLabel
+
+    pic3.style.display = state3;
+    state3 === 'block' 
+        ? border3.style.backgroundImage = activeLabel
+        : border3.style.backgroundImage = passiveLabel
+}
 
 function triaglesFunc() {
         if (activeId === 'label1') {
-            pic1.style.display = 'block';
-            border1.style.backgroundImage = 'url(../allAssets/services/active-label.png)'; 
-            pic2.style.display = 'none';
-            border2.style.backgroundImage = 'url(../allAssets/services/passive-label.png)';
-            pic3.style.display = 'none';
-            border3.style.backgroundImage = 'url(../allAssets/services/passive-label.png)';
+            switchTrianglesStyle('block', 'none', 'none')
         } else if (activeId === 'label2') {
-            pic1.style.display = 'none';
-            border1.style.backgroundImage = 'url(../allAssets/services/passive-label.png)';
-            pic2.style.display = 'block';
-            border2.style.backgroundImage = 'url(../allAssets/services/active-label.png)';
-            pic3.style.display = 'none';
-            border3.style.backgroundImage = 'url(../allAssets/services/passive-label.png)';
+            switchTrianglesStyle('none', 'block', 'none')
         } else if (activeId === 'label3') {
-            pic1.style.display = 'none';
-            border1.style.backgroundImage = 'url(../allAssets/services/passive-label.png)';
-            pic2.style.display = 'none';
-            border2.style.backgroundImage = 'url(../allAssets/services/passive-label.png)';
-            pic3.style.display = 'block';
-            border3.style.backgroundImage = 'url(../allAssets/services/active-label.png)';
+            switchTrianglesStyle('none', 'none', 'block')
         };
-}; // а тут логику сам писал ( видно потому, что не аккуратно )
+};
 
 triaglesFunc();
-
-console.log(triagles)

@@ -48,13 +48,3 @@ addBtn.addEventListener('click', (event) => {
     })
 })
 
-// plus.addEventListener('click', () => { 
-//     counter++;
-//     valueOfButton.textContent = counter;
-// }, false);
-// minus.addEventListener('click', () => { 
-//     counter--;
-//     valueOfButton.textContent = counter;
-// }, false);
-
-

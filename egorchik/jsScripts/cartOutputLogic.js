@@ -36,7 +36,6 @@ function addItemFromBd() {
                     totalJSON.push(item.sum)
                 }
                 let sumOfTotalJSON = totalJSON.reduce((prev, curr) => prev + curr, 0)
-                // console.log(sumOfTotalJSON);
 
                 const visibleForGuestSum = document.querySelector('.grids-zakaz1 > p');
                 visibleForGuestSum.textContent = `${sumOfTotalJSON} руб.`; 
