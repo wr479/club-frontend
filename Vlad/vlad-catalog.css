@@ -573,7 +573,7 @@ textarea:focus {
     font-weight: 700;
     color: #A5A5A5;
     padding-right: 47px;
-    margin-left: clamp(244px, 40.75vw, 489px );
+    margin-left: 489px;
 }
    
 
@@ -621,7 +621,7 @@ textarea:focus {
     justify-content: center;
     align-items: center;
     margin-right: 28px;
-    margin-left: clamp(224px, 40.75vw, 448px);
+    margin-left:  448px;
 }
 
 .main__place{
@@ -697,9 +697,23 @@ button{
     .nav-links{
         order: 2;
     }
+    
+    .upstroke {
+    position: fixed;
+    bottom: 195px;
+    right: 40px;
+    cursor: pointer;
+    }
+
+    .downstroke {
+        position: fixed;
+        bottom: 130px;
+        right: 40px;
+        cursor: pointer;
+    }
 }
 
-@media(max-width: 1200px){
+@media(max-width: 1000px){
     .main__price{
         display: none;
     }
@@ -743,18 +757,15 @@ button{
         padding: 5px 5px;
     }
 
-    .upstroke {
-    position: fixed;
-    bottom: 105px;
-    right: 40px;
-    cursor: pointer;
+    
+
+    .main__counter{
+        grid-column-start: 1;
+        grid-row: 2/3;
     }
 
-    .downstroke {
-        position: fixed;
-        bottom: 40px;
-        right: 40px;
-        cursor: pointer;
+    .main__product-price{
+        grid-column-start: 2;
     }
 }
 
