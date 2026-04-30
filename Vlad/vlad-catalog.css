@@ -464,6 +464,7 @@ textarea:focus {
 .main__battery{
     width: 100%;
     max-width: 134px;
+    min-width: 90px;
     height: auto;
 }
 
@@ -551,13 +552,18 @@ textarea:focus {
 
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+}
+
+.main__total-price div{
+    display: flex;
+    gap: 47px;
 }
 
 .main__clean{
-    width: 168px;
+    width:  clamp(150px, 8.75vw, 168px);
     height: 40px;
-    font-size: 12px;
+    font-size: clamp(10px, 0.6vw, 12px);
     font-weight: 700;
     border: 4px solid #C53720;
     color: #C53720;
@@ -566,14 +572,14 @@ textarea:focus {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 1px 3px;
+
 }
 
 .main__total-text{
     font-size: 20px;
     font-weight: 700;
     color: #A5A5A5;
-    padding-right: 47px;
-    margin-left: 489px;
 }
    
 
@@ -589,7 +595,12 @@ textarea:focus {
 
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+}
+
+.main__processing div{
+    display: flex;
+    gap: clamp(15px, 1.45vw, 28px);
 }
 
 .main_buy{
@@ -604,12 +615,13 @@ textarea:focus {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 1px 3px;
     
     text-decoration: none;
 }
 
 .main__order{
-    width:  clamp(130px, 9.27vw, 178px);
+    width:  clamp(150px, 9.27vw, 178px);
     height: 40px;
     font-size:  clamp(10px, 0.6vw, 12px);
     font-weight: 700;
@@ -620,12 +632,12 @@ textarea:focus {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 28px;
-    margin-left:  448px;
+    padding: 1px 3px;
+
 }
 
 .main__place{
-    width:  clamp(130px, 8.75vw, 168px);
+    width:  clamp(150px, 8.75vw, 168px);
     height: 40px;
     font-size: clamp(10px, 0.6vw, 12px);
     font-weight: 700;
@@ -637,6 +649,8 @@ textarea:focus {
     justify-content: center;
     align-items: center;
     text-decoration: none;
+    padding: 1px 3px;
+
 }
 
 .upstroke {
@@ -713,61 +727,7 @@ button{
     }
 }
 
-@media(max-width: 1000px){
-    .main__price{
-        display: none;
-    }
 
-    .main__basket{
-        grid-template-columns: 134px 188px;
-    }
-
-    .main__total-price{
-        display: grid;
-        grid-template-columns: 180px;
-        row-gap: 20px;
-        justify-content: start;
-    }
-
-    .main__processing{
-        display: grid;
-        
-        grid-template-columns: 202px 170px;
-        
-
-        gap: 20px;
-    }
-
-    .main__order{
-        margin-left: 0px;
-        margin-right: 0px;
-        grid-column: 2/3;
-        padding: 5px 5px;
-    }
-    .main__place{
-        grid-column: 2/3;
-        grid-row: 1;
-        padding: 5px 5px;
-    }
-
-
-    .main__total-text{
-        margin-left: 0px;
-        margin-right: 0px;
-        padding: 5px 5px;
-    }
-
-    
-
-    .main__counter{
-        grid-column-start: 1;
-        grid-row: 2/3;
-    }
-
-    .main__product-price{
-        grid-column-start: 2;
-    }
-}
 
 @media(max-width: 720px){ 
     .product-title-and-button{
@@ -901,8 +861,6 @@ button{
         font-size: 18px;
     }
 
-    
-
     .burger-checkbox:checked ~ .nav-links{
         top: 100px;   
     }
@@ -922,11 +880,80 @@ button{
     }
 }
 
+@media(max-width: 700px){
+    .main__processing div{
+        flex-direction: column;
+        gap: 20;
+        align-items: end;
+    }
+    
+    .main__order{
+        order: 1;
+    }
+
+    
+    .main__total-price div{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .main__price{
+        display: none;
+    }
+
+    .main__basket{
+        grid-template-columns: 134px 188px;
+    }
+
+    .main__total-price{
+        display: grid;
+        grid-template-columns: 180px;
+        row-gap: 20px;
+        justify-content: start;
+    }
+
+    .main__processing{
+        display: grid;
+        
+        grid-template-columns: 202px 170px;
+        align-items: start;
+
+        gap: 20px;
+    }
+
+    .main__order{
+        margin-left: 0px;
+        margin-right: 0px;
+        grid-column: 2/3;
+        padding: 5px 5px;
+    }
+    .main__place{
+        grid-column: 2/3;
+        grid-row: 1;
+        padding: 5px 5px;
+    }
+
+
+    .main__total-text{
+        margin-left: 0px;
+        margin-right: 0px;
+        padding: 5px 5px;
+    }
+
+    .main__counter{
+        grid-column-start: 1;
+        grid-row: 2/3;
+    }
+
+    .main__product-price{
+        grid-column-start: 2;
+    }
+}
+
 @media(max-width: 516px){
     .main__processing{
-        padding: 38px 0px 40px 16px;
+        padding: 38px 16px 40px 16px;
         grid-template-columns: 150px 130px;
-        justify-content: start;
         gap: 10px
     }
 
