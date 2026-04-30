@@ -883,7 +883,7 @@ button{
 @media(max-width: 700px){
     .main__processing div{
         flex-direction: column;
-        gap: 20;
+        gap: 20px;
         align-items: end;
     }
     
