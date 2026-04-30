@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Главная</title>
+    <title>Корзина</title>
     <link rel="icon" href="../../egorchik/allAssets/favicon/car2.png" type="image/x-icon">
-    <link rel="stylesheet" href="./vlad-services.css">
+    <link rel="stylesheet" href="./vlad-catalog.css">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
 </head>
 <body>
     <header id="upperPage">
@@ -14,7 +17,7 @@
                 <a href="../egorchik/html's/main.html"><img class="main-logo" src="./main-logo-and-bunner/logo.svg" alt="" title="Главная страница"></a>
             </div>
             <input class="burger-checkbox" id="burger" type="checkbox">
-            <label for="burger" title="Меню">
+            <label class="burger" for="burger" title="Меню">
                 <span></span>
             </label>
             <div class="nav-links">
@@ -44,22 +47,21 @@
         <button>НАЙТИ</button>
         <img id="searchbar-closer" src="../egorchik/allAssets/nav-icons/крестик.svg" alt="">
     </div>
-    <div class="swiper-container">
+    <div class="swiper-container swiper1">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-                <img src="./main-logo-and-bunner/banner.png" alt="">
+                <img src="../egorchik/allAssets/main-logo-and-bunner/bunner.jpg" alt="">
                 <div class="swiper-slide-title">
                     <div class="swiper-slide-with-button-div">
-                        <h1>ПРОФЕССИОНАЛЬНАЯ ПОМОЩЬ ВАШЕМУ АВТОМОБИЛЮ</h1>
+                        <h1>НАДЕЖНЫЕ, КАЧЕСТВЕННЫЕ АККУМУЛЯТОРЫ</h1>
                         <a href="../egorchik/html's/catalog2.html">ПЕРЕЙТИ В КАТАЛОГ</a>
                     </div>
                 </div>
             </div>
-        </div>
         <div class="swiper-pagination"></div>
         <div class="swiper-scrollbar-lock"></div>
     </div>
-     <main>
+    <main>
         <div class="main__nav">
             <div class="nav-wrapper">
                 <a class="link" href="../egorchik/html's/main.html">ГЛАВНАЯ</a>
@@ -67,27 +69,58 @@
                 <a href="./services.html" class="main__services">УСЛУГИ</a>
             </div>   
         </div>
-        <div class="main__services-block">
-            <div class="main__border">
-                <h1 class="main__heading">УСЛУГИ</h1>
-            </div>
-            <p class="main__description">Менеджеры компании с радостью ответят на ваши вопросы и помогут с выбором продукции.</p>
-            <div class="main__products">
-                <div class="main__product-diagnostics"> 
-                    <img class="main__img-diagnostics" src="./assets/диагностика 2.png" alt="">
-                    <div class="product-title-and-button">
-                        <p class="main__title">ДИАГНОСТИКА АККУМУЛЯТОРА</p>
-                        <a class="main__button" href="../Vlad/services2.html">ПОДРОБНЕЕ</a>
+        <div class="main__basket-block">
+            <h1 class="main__basket-text">КОРЗИНА</h1>
+            <div class="main__basket-border">
+                <div class="main__basket">
+                    <img class="main__battery" src="./imges/MAGNUM 60Ah 1.png" alt="">
+                    <div class="main__button-stock">
+                        <p>MAGNUM 60Ah</p>
+                        <a href="../egorchik/html's/chosen-Item-catalog.html">В НАЛИЧИИ</a>
                     </div>
-                </div>
-                <div class="main__product-accept">
-                    <img class="main__img-accets" src="./assets/обмен 1.png" alt=""> 
-                    <div class="product-title-and-button">
-                        <p class="main__title">ПРИЕМ АККУМУЛЯТОРОВ</p>
-                        <a class="main__button" href="../Vlad/services2.html">ПОДРОБНЕЕ</a>    
+                    <div class="main__product-price">
+                        <p class="main__new-price">2199 руб.</p>
+                        <p class="main__past-price">2199 руб.</p>
                     </div>
+                    <div class="main__counter">
+                        <div class="main__symbols">-</div>
+                        <div class="main__number">01</div>
+                        <div class="main__symbols">+</div>
+                    </div>
+                    <p class="main__price">2199 руб.</p>
+                    <img class="main__cross" src="./imges/крестик.png" alt="">
+                </div>
+                <div class="main__basket">
+                    <img class="main__battery" src="./imges/MAGNUM 60Ah 1.png" alt="">
+                    <div class="main__button-stock">
+                        <p>MAGNUM 60Ah</p>
+                        <a href="../egorchik/html's/chosen-Item-catalog.html">В НАЛИЧИИ</a>
+                    </div>
+                    <div class="main__product-price">
+                        <p class="main__new-price">2199 руб.</p>
+                        <p class="main__past-price">2199 руб.</p>
+                    </div>
+                    <div class="main__counter">
+                        <div class="main__symbols">-</div>
+                        <div class="main__number">01</div>
+                        <div class="main__symbols">+</div>
+                    </div>
+                    <p class="main__price">2199 руб.</p>
+                    <img class="main__cross" src="./imges/крестик.png" alt="">
+                </div>
+                <div class="main__total-price">
+                    <button class="main__clean">ОЧИСТИТЬ СПИСОК</button>
+                    <p class="main__total-text">Итого 2 товара</p>
+                    <p class="main__total">4398 руб.</p>
+                </div>
+                <div class="main__processing">
+                    <a class="main_buy" href="../egorchik/html's/catalog2.html">ПРОДОЛЖИТЬ ПОКУПКИ</a>
+                    <button class="main__order">РАСПЕЧАТАТЬ ЗАКАЗ</button>
+                    <a class="main__place" href="../Ilya/pages/oformlenie.html">ОФОРМИТЬ ЗАКАЗ</a>
                 </div>
             </div>
+            <img id="iconUp" class="upstroke" src="../egorchik/allAssets/news-content/strokeUp.svg" alt="">
+            <img class="downstroke" src="../egorchik/allAssets/news-content/strokeDown.svg" alt="">
         </div>
     </main>
     <footer>
@@ -128,17 +161,20 @@
         <div class="footer-feedback">
             <div class="feedback-call">
                 <img src="./footer/mail.svg" alt="">
-                <a href="tel:83422793613">+7 (342) 279-36-13</a>
+                <p>+7 (342) 279-36-13</p>
             </div>
             <div class="feedback-mail">
                 <img src="./footer/phone.svg" alt="">
-                <a href="mailto:proauto59@yandex.ru">proauto59@yandex.ru</a>
+                <p>proauto59@yandex.ru</p>
             </div>
             <div class="feedback-button">
                 <button>ЗАКАЗАТЬ ЗВОНОК</button>
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="../egorchik/jsScripts/slider.js"></script>
     <script src="../egorchik/jsScripts/dropDownSrchBar.js"></script>
+    <script src="../egorchik/jsScripts/pageToUp.js"></script>
 </body>
 </html>
