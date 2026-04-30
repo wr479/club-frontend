@@ -3,28 +3,61 @@
     {
       "name": "MAGNUM 60Ah",
       "emkost": 60,
-      "price": 2199,
-      "sum": 4398,
-      "quantity": 2,
-      "id": "J3rgDGOzLCs"
-    }
-  ],
-  "users": [
-    {
-      "id": "846d",
-      "name": "Тест",
-      "phone": "123123123123",
-      "mail": "",
-      "accept": "on"
+      "price": 0,
+      "quantity": 0,
+      "id": "xJBoN-P64Rc"
     },
     {
-      "name": "Пидорас",
-      "phone": "123123123123",
-      "mail": "",
-      "accept": "on",
-      "id": "gNRT2PqcXjA"
+      "name": "MAGNUM 60Ah",
+      "emkost": 60,
+      "price": 0,
+      "quantity": 0,
+      "id": "z4oM_1l2Uss"
+    },
+    {
+      "name": "MAGNUM 60Ah",
+      "emkost": 60,
+      "price": 0,
+      "quantity": 0,
+      "id": "swP0AWGEqok"
+    },
+    {
+      "name": "MAGNUM 60Ah",
+      "emkost": 60,
+      "price": 0,
+      "quantity": 0,
+      "id": "bBegx5b1Cyo"
+    },
+    {
+      "name": "MAGNUM 60Ah",
+      "emkost": 60,
+      "price": 0,
+      "quantity": 0,
+      "id": "iE6EScRQp2w"
+    },
+    {
+      "name": "MAGNUM 60Ah",
+      "emkost": 60,
+      "price": 0,
+      "quantity": 0,
+      "id": "-0mjiNOwh_Q"
+    },
+    {
+      "name": "MAGNUM 60Ah",
+      "emkost": 60,
+      "price": 0,
+      "quantity": 0,
+      "id": "d5Mp3mAsmnM"
+    },
+    {
+      "name": "MAGNUM 60Ah",
+      "emkost": 60,
+      "price": 0,
+      "quantity": 0,
+      "id": "C0dZNseCqjM"
     }
   ],
+  "users": [],
   "totalPrice": "100",
   "$schema": "./node_modules/json-server/schema.json"
 }

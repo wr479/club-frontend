@@ -817,6 +817,11 @@ input:focus {
     cursor: pointer;
 }
 
+.more-info-btn > a {
+    color: rgba(197, 55, 32, 1);
+    text-decoration: none;
+}
+
 .in-availebility {
     border: 4px solid rgba(60, 192, 81, 1);
 }

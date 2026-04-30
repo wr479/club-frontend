@@ -1,46 +1,48 @@
 const pagesFieldAfter = document.querySelector('.grids-zakaz1');
 
-function addItemFromBd() {
-    fetch('/api/cart')
-        .then((response) => {
-            console.log(response)
+function outputItem() {
+    let total = []
 
-            return response.json()
-        })
-        .then((json) => {
-            for (let i in json) {
-                let newEl = document.createElement('div');
-                newEl.innerHTML = `
-                    <div class="grids-zakaz2">
-                        <div class="grids-zakaz2_text">
-                            <span1>${json[i].name}</span1>
-                            <span>${json[i].quantity} шт. х ${json[i].price} руб.</span>
-                        </div>
-                        <div class="cont-for_second-text">
-                            <span>${json[i].sum} руб.</span>
-                        </div>
-                        <div class="edit-tools">
-                            <p class="edit-tools-delete-item">×</p>
-                            <div class="edit-tools-wrapper">
-                                <span>+</span>
-                                <span>-<span>
-                            </div>
+    for (let i = 0; i < localStorage.length; i++) {
+        let key = localStorage.key(i)
+        let val = localStorage.getItem(key)
+        console.log(`${key}, ${val}`)
+
+        try {
+            storageData = JSON.parse(val);
+        } catch (e) {
+            console.error(`Ошибка парсинга для ключа ${key}:`, e);
+            continue;
+        }
+
+        let newEl = document.createElement('div');
+        newEl.innerHTML = `
+            <div class="grids-zakaz2" data-cart-id=${key}>
+                <div class="grids-zakaz2_text">
+                    <span1>${storageData.name}</span1>
+                    <span>${storageData.quantity} шт. х ${storageData.price}</span>
+                </div>
+                <div class="cont-for_second-text">
+                    <span>${storageData.sum} руб.</span>
+                </div>
+                <div class="edit-tools">
+                    <p class="edit-tools-delete-item">×</p>
+                    <div class="edit-tools-wrapper">
+                        <span>+</span>
+                        <span>-</span>
                     </div>
-                `
-                newEl.classList.add('shell');
-                newEl.setAttribute('data-id', `${json[i].id}`)
-                pagesFieldAfter.after(newEl);
+                </div>
+            </div>
+        `
+        newEl.classList.add('shell');
+        pagesFieldAfter.after(newEl)
+        total.push(storageData.sum)
+    }
 
-                let totalJSON = []
-                for(let item of json) {
-                    totalJSON.push(item.sum)
-                }
-                let sumOfTotalJSON = totalJSON.reduce((prev, curr) => prev + curr, 0)
+    let sumOfTotalJSON = total.reduce((prev, curr) => prev + curr, 0)
 
-                const visibleForGuestSum = document.querySelector('.grids-zakaz1 > p');
-                visibleForGuestSum.textContent = `${sumOfTotalJSON} руб.`; 
-            }
-        })
+    const visibleForGuestSum = document.querySelector('.grids-zakaz1 > p');
+    visibleForGuestSum.textContent = `${sumOfTotalJSON} руб.`; 
 }
 
-addItemFromBd()
+outputItem()

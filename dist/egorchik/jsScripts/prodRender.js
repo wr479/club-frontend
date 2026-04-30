@@ -1,5 +1,28 @@
 const neededFiieldOfProducts = document.querySelector('.pages-grid');
 
+function addProductToCart(el) {
+    const id = el.getAttribute('data-js-id')
+
+    const name = el.querySelector('.accum-info > h1').textContent
+    console.log(name)
+    const price = el.querySelector('.price-cont > h1').textContent
+    console.log(price)
+    const quantity = el.querySelector('#counter').textContent
+    console.log(quantity)
+
+    const sum = parseInt(price) * Number(quantity)
+    console.log(sum)
+
+    localStorage.setItem(`${id}`, 
+        JSON.stringify({
+            quantity: quantity,
+            price: price,
+            name: name,
+            sum: sum
+        })
+    )
+}
+
 fetch('http://localhost:3000/api/admin/products')
     .then(response => response.json())
     .then(json => {
@@ -51,7 +74,7 @@ fetch('http://localhost:3000/api/admin/products')
                                 <img src="../allAssets/catalog-content/unhidden-buck.svg">
                             </div>
                             <button class="more-info-btn">
-                                ПОДРОБНЕЕ
+                                <a href="../html's/chosen-item-catalog.html">ПОДРОБНЕЕ</a>
                             </button>
                             <div class="in-availebility-check">
                                 <p>В НАЛИЧИИ</p>
@@ -104,6 +127,28 @@ fetch('http://localhost:3000/api/admin/products')
                     </div>
                 `
             }
+
             neededFiieldOfProducts.insertAdjacentElement('beforeend', newElement)
         }
+
+        const hideBtn = document.querySelectorAll('.choosen-bucket-btn-cont');
+
+        hideBtn.forEach((btn) => {
+            btn.addEventListener('click', () => {
+                const cont = btn.closest('.sortpages-page');
+                if (cont) {
+                    const hideTheContent = cont.querySelector('.choosen-addItem-btn-cont');
+                    const btnAfterClick = cont.querySelector('.choosen-bucket-btn-cont');
+                    const contAfterClick = cont.querySelector('.choosen-bucket-btn-cont-hidden');
+                    hideTheContent.style.visibility = 'hidden';
+                    btnAfterClick.style.display = 'none';
+                    contAfterClick.style.display = 'flex';
+                } else {
+                    console.log('error')
+                }
+
+                addProductToCart(cont)
+
+            }, false);
+        });
     })
