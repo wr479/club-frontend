@@ -654,7 +654,7 @@ input:focus {
 .pages-grid {
     display: grid;
     grid-template-columns: repeat(1,1fr);
-    grid-template-rows: repeat(6,1fr);
+    grid-auto-rows: repeat(6,1fr);
     row-gap: 15px;
 }
 

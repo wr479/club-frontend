@@ -1,6 +1,4 @@
 const currentForm = document.querySelector('.oformlenie-inputs-cont > form');
-console.log(currentForm)
-
 const nameInputEl = document.querySelector('[data-name-input]');
 const phoneInputEl = document.querySelector('[data-phone-input]');
 const mailInputEl = document.querySelector('[data-mail-input]');
@@ -53,20 +51,40 @@ mailInput.addEventListener('blur', () => {
 currentForm.addEventListener('submit', (event) => {
     event.preventDefault();
 
+    const idDetect = document.querySelectorAll('.shell');
+        idDetect.forEach((el) => {
+        const idForDelete = el.children[0].getAttribute('data-cart-id')
+        fetch(`http://localhost:3000/api/admin/products/${idForDelete}`, {
+            method: "DELETE",
+            headers: {
+            'Content-Type': 'application/json'
+            },
+        })
+        .then((response => {
+            if (response.ok) {
+                console.log(`товар с айди ${idForDelete} удален в api успешно`)
+            } else {
+                return response.json().then(errorData => {
+                    throw new Error(errorData.message || 'Ошибка при удалении из api')
+                })
+            }
+        }))
+        .catch(er => console.error(er))
+
+        try {
+            localStorage.removeItem(`${idForDelete}`)
+            location.reload()
+            
+            console.log(`удаление элемента с айди ${idForDelete} из localStorage успешно`)
+        } catch (error) {
+            console.log(`Ошибка при удалени из localStorage: ${error}`)
+        }
+    })
+
+
     const formData = new FormData(currentForm)
     const userData = Object.fromEntries(formData)
 
-    fetch('/api/users', {
-        method: "POST", 
-        headers: {
-                'Content-Type': 'application/json'
-                },
-        body: JSON.stringify(userData)
-    })
-    .then((response) => {
-        return response.json()
-    })
-    .then((json) => {
-        console.log(json)
-    })
+    console.log(userData)
 })
+

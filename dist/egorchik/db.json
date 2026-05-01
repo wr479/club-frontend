@@ -57,7 +57,15 @@
       "id": "C0dZNseCqjM"
     }
   ],
-  "users": [],
+  "users": [
+    {
+      "name": "Пидорас",
+      "phone": "89171189188",
+      "mail": "",
+      "accept": "on",
+      "id": "9dOhM8018_A"
+    }
+  ],
   "totalPrice": "100",
   "$schema": "./node_modules/json-server/schema.json"
 }
