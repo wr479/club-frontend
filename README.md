@@ -1,8 +1,8 @@
 *eng:*
 # **Frontend project**
-That project was build by a team of frontend beginers and one fullstack dev, like learning practice.
-Project haven't @media part ( responsive design for mobile and other )
-Every member wrote his own parts of project:
+That project was build by a team of frontend beginers and one fullstack dev, like learning practice.<br>
+Project haven't @media part ( responsive design for mobile and other )<br>
+Every member wrote his own parts of project:<br>
 ---
 ## Frontend part
 Was wrote by [RomaS0307](https://github.com/RomaS0307):
@@ -44,9 +44,9 @@ npm run dev
 cd "backend"
 docker-compose up --build -d 
 ```
-- Open admin, catalog and swagger on port 3000:
-    http://localhost:3000/admin ( admin panel )
-    http://localhost:3000/catalog ( catalog of products )
+- Open admin, catalog and swagger on port 3000:<br>
+    http://localhost:3000/admin ( admin panel )<br>
+    http://localhost:3000/catalog ( catalog of products )<br>
     http://localhost:3000/api/docs ( swagger with all api for project )
 
 Good luck !
@@ -54,9 +54,9 @@ Good luck !
 
 *рус:*
 # **Frontend проект**
-Этот проект был создан командой начинающих разработчиков frontend и одним разработчиком fullstack, как учебная практика.
-В проекте нет @media части (адаптивный дизайн для мобильных устройств и другое)
-Каждый участник написал свои собственные части проекта:
+Этот проект был создан командой начинающих разработчиков frontend и одним разработчиком fullstack, как учебная практика.<br>
+В проекте нет @media части (адаптивный дизайн для мобильных устройств и другое)<br>
+Каждый участник написал свои собственные части проекта:<br>
 ---
 ## Часть интерфейса (Фронтенд)
 Было написано [RomaS0307](https://github.com/RomaS0307):
@@ -98,9 +98,15 @@ npm run dev
 cd "backend"
 docker-compose --build -d 
 ```
-- Откройте admin панель, каталог и swagger на порту 3000:
- http://localhost:3000/admin ( панель администратора )
- http://localhost:3000/catalog ( каталог товаров )
+- Откройте admin панель, каталог и swagger на порту 3000:<br>
+ http://localhost:3000/admin ( панель администратора )<br>
+ http://localhost:3000/catalog ( каталог товаров )<br>
  http://localhost:3000/api/docs ( сваггер со всеми api для проекта )
 
 Удачи!
+
+Programming Languages and Tools on project : 
+- JavaScript
+- Node.js
+- Docker
+- PostgreSQL
