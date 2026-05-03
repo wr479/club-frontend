@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Каталог аккумуляторов</title>
+    <link rel="stylesheet" href="/admin/styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Каталог аккумуляторов</h1>
+      <section class="card">
+        <div class="grid">
+          <label>Мин. цена <input id="minPrice" type="number" /></label>
+          <label>Макс. цена <input id="maxPrice" type="number" /></label>
+          <label class="checkbox"><input id="inStock" type="checkbox" /> В наличии</label>
+          <label class="checkbox"><input id="underOrder" type="checkbox" /> Под заказ</label>
+        </div>
+        <div class="actions">
+          <button id="applyFilters">Применить</button>
+          <button id="resetFilters" type="button">Сбросить</button>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Обратная связь</h2>
+        <form id="feedbackForm">
+          <div class="grid">
+            <label>Ваше имя <input id="feedbackName" required /></label>
+            <label>Телефон <input id="feedbackPhone" required /></label>
+            <label>
+              Комментарий
+              <textarea id="feedbackMessage" rows="3" placeholder="Уточните, какой аккумулятор нужен"></textarea>
+            </label>
+          </div>
+          <div class="actions">
+            <button type="submit">Отправить заявку</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="card">
+        <table>
+          <thead>
+            <tr>
+              <th>Фото</th>
+              <th>Название</th>
+              <th>Бренд</th>
+              <th>Цена</th>
+              <th>Емкость</th>
+              <th>Напряжение</th>
+              <th>Наличие</th>
+            </tr>
+          </thead>
+          <tbody id="catalogBody"></tbody>
+        </table>
+      </section>
+    </main>
+    <script src="/catalog/app.js"></script>
+  </body>
+</html>
