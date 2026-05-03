@@ -26,6 +26,33 @@ function addProductToCart(el) {
     )
 }
 
+function addProductFromPopup(el) {
+    const popupCont = el.closest('.popup-cont');
+    
+    let id, name, price, quantity, sum;
+
+    
+    id = popupCont.querySelector('[data-js-id]')?.getAttribute('data-js-id');
+    name = popupCont.querySelector('.popup_top-part span:first-child')?.textContent;
+    const priceElement = popupCont.querySelector('.price-cont h1');
+    price = priceElement ? priceElement.textContent.replace(' руб.', '') : '0';
+    const quantityElement = popupCont.querySelector('#counter');
+    quantity = quantityElement ? quantityElement.textContent : '1';
+
+    const numericPrice = parseInt(price);
+    const numericQuantity = Number(quantity);
+    sum = numericPrice * numericQuantity;
+
+    localStorage.setItem(`${id}`, 
+        JSON.stringify({
+            quantity: numericQuantity,
+            price: numericPrice,
+            name: name,
+            sum: sum
+        })
+    );
+}
+
 function renderProducts(products) {
 
     neededFiieldOfProducts.innerHTML = '';
@@ -76,7 +103,7 @@ function renderProducts(products) {
                             <img src="../allAssets/catalog-content/unhidden-buck.svg">
                         </div>
                         <button class="more-info-btn">
-                            <a href="../html's/chosen-item-catalog.html">ПОДРОБНЕЕ</a>
+                            ПОДРОБНЕЕ
                         </button>
                         <div class="in-availebility-check">
                             <p>В НАЛИЧИИ</p>
@@ -131,14 +158,15 @@ function renderProducts(products) {
         }
 
         neededFiieldOfProducts.insertAdjacentElement('beforeend', newElement)
+        cartBtnRerender(newElement);
     }
 
-    cartBtnRerender();
+    openProduct();
 }
 
 
-function cartBtnRerender() {
-    const hideBtn = document.querySelectorAll('.choosen-bucket-btn-cont');
+function cartBtnRerender(el) {
+    const hideBtn = el.querySelectorAll('.choosen-bucket-btn-cont');
 
     hideBtn.forEach((btn) => {
         btn.addEventListener('click', () => {
@@ -156,6 +184,41 @@ function cartBtnRerender() {
 
             addProductToCart(cont)
 
+        }, false);
+    });
+}
+
+function cartBtnPopupRenderer(el) {
+    const hideBtn = el.querySelectorAll('.popup-cont .choosen-bucket-btn-cont');
+
+    hideBtn.forEach((btn) => {
+        btn.addEventListener('click', () => {
+            const cont = btn.closest('.popup-cont');
+
+            if (cont) {
+                const hideTheContent = cont.querySelector('.choosen-addItem-btn-cont');
+                const btnAfterClick = cont.querySelector('.choosen-bucket-btn-cont');
+                const contAfterClick = cont.querySelector('.choosen-bucket-btn-cont-hidden');
+
+                if (hideTheContent) {
+                    hideTheContent.style.visibility = 'hidden';
+                }
+                if (btnAfterClick) {
+                    btnAfterClick.style.display = 'none';
+                }
+                if (contAfterClick) {
+                    contAfterClick.style.display = 'flex';
+                }
+
+                const infoField = cont.querySelector('.popup_prod-info');
+                if (infoField) {
+                    addProductFromPopup(infoField)
+                } else {
+                    console.error('infofield ne naiden')
+                }
+            } else (
+                console.log('error: popup-cont не найден')
+            )
         }, false);
     });
 }
@@ -295,6 +358,123 @@ function loadAllProducts() {
         .catch(error => {
             console.error('Ошибка загрузки продуктов:', error);
         });
+}
+
+function openProduct() {
+    const openBtns = document.querySelectorAll('.more-info-btn')
+    console.log(`кнопок найдено: ${openBtns.length}`)
+
+    openBtns.forEach((btn) => {
+        btn.addEventListener('click', () => {
+            // parents of elems
+            const PriceAndQuantityparent = btn.parentElement
+            const ProductInfoParent = PriceAndQuantityparent.parentElement
+
+            // elems
+            const prop = {
+            in_stock: PriceAndQuantityparent.querySelector('.in-availebility-check')?.textContent.trim() === 'В НАЛИЧИИ',
+            id: ProductInfoParent.getAttribute('data-js-id'),
+            title: ProductInfoParent.querySelector('h1[class="1"]')?.textContent,
+            polarity: ProductInfoParent.querySelector('.info-black:nth-child(3) .info-grey')?.textContent,
+            terminal_type: ProductInfoParent.querySelector('.info-black:nth-child(4) .info-grey')?.textContent,
+            brand: ProductInfoParent.querySelector('.info-black:nth-child(6) .info-grey')?.textContent
+            }
+
+            const capacity_ah = ProductInfoParent.querySelector('#emkost')?.getAttribute('data-val') || 
+                           ProductInfoParent.querySelector('#emkost .info-grey')?.textContent
+            const voltage = ProductInfoParent.querySelector('.info-black:nth-child(2) .info-grey')?.textContent
+
+            const dimensionsText = ProductInfoParent.querySelector('.info-black:nth-child(5) .info-grey')?.textContent
+            const [length, width, height] = dimensionsText ? dimensionsText.split('x') : ['', '', '']
+
+            const price = PriceAndQuantityparent.querySelector('.price-cont h1')?.textContent.replace(' руб.', '')
+            const weight = ProductInfoParent.querySelector('.info-black:nth-child(7) .info-grey')?.textContent  
+   
+            console.log(PriceAndQuantityparent)
+            console.log(ProductInfoParent)
+            console.log({ prop, capacity_ah, voltage, length, width, height, price })
+
+            let newEl = document.createElement('div')
+            newEl.innerHTML = `
+            <div class="overlay-shell">
+                <div class="popup-cont">
+                    <div class="popup_top-part">
+                        <span>${prop.title}</span>
+                        <img src="../../Roman/popup's/imgs/крестик.png" alt="X">
+                    </div>
+                    <div class="popup_main-part">
+                        <div class="swiper-custom-wrapper">
+                            <div class="swiper-container item-swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img class='magnum-pic' src="../allAssets/catalog-content/MAGNUM 60Ah 1.png">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class='magnum-pic' src="../allAssets/catalog-content/MAGNUM 60Ah 1.png">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class='magnum-pic' src="../allAssets/catalog-content/MAGNUM 60Ah 1.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="swiper-button-prev">
+                                    <img src="../allAssets/catalog-content/item-arrow.svg" alt="">
+                                </div>
+                                <div class="swiper-button-next">
+                                    <img src="../allAssets/catalog-content/item-arrow.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="popup_prod-info">
+                                <p class="info-grey">${prop.in_stock === true ? 'В НАЛИЧИИ' : 'ПОД ЗАКАЗ'}</p>
+                                <div class="info-cont">
+                                    <p class="info-black" id="emkost" data-val="60">Емкость, Ач: <span class='info-grey'>${capacity_ah}</span></p>
+                                    <p class="info-black">Пусковой ток, А: <span class='info-grey'>${voltage}</span></p>
+                                    <p class="info-black">Полярность: <span class='info-grey'>${prop.polarity}</span></p>
+                                    <p class="info-black">Клеммы: <span class='info-grey'>${prop.terminal_type}</span></p>
+                                    <p class="info-black">Pазмеры (ДхШхВ), мм: <span class='info-grey'>${length}х${width}х${height}</span></p>
+                                    <p class="info-black">Производитель: <span class='info-grey'>${prop.brand}</span></p>
+                                    <p class="info-black">Bес, кг: <span class='info-grey'>${weight}</span></p>
+                                </div>
+                                <div class="price-cont">
+                                    <h1>${price} руб.</h1>
+                                    <p>2900 руб.</p>
+                                </div>
+                                <p class="post-price-text">Цена действительна при сдаче старого аккумулятора аналогичной емкости в лом</p>
+                                <div class="choosen-bucket-btn-cont">
+                                    <button id="bucketPurchase" class="purchase-btn-in-btn-cont">В КОРЗИНУ</button>
+                                    <img src="../allAssets/catalog-content/choosen-bucket.svg">
+                                </div>
+                                <div class="choosen-bucket-btn-cont-hidden">
+                                    <button>В КОРЗИНЕ</button>
+                                    <img src="../allAssets/catalog-content/unhidden-buck.svg">
+                                </div>
+                                <div class="choosen-addItem-btn-cont">
+                                    <img class="decrement" id="minusCount" src="../allAssets/catalog-content/removeItem.svg">
+                                    <button id="counter">00</button>
+                                    <img class="increment" id="plusCount" src="../allAssets/catalog-content/addItem.svg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            `
+
+            const closePopupBtn = newEl.querySelector('.popup_top-part > img')
+
+            ProductInfoParent.insertAdjacentElement('beforeend', newEl)
+
+            cartBtnPopupRenderer(newEl)
+            closePopup(newEl, closePopupBtn)
+        })
+    })
+}
+
+function closePopup(parent, el) {
+    el.addEventListener('click', () => {
+        parent.remove()
+    })
 }
 
 document.addEventListener('DOMContentLoaded', () => {
